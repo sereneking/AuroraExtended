@@ -14,6 +14,14 @@
             <p class="indent">Afterward, you can use a bonus action to cause the weapon to reappear in your empty hand. If you don't call the weapon back to your hand, it reappears at the point where it exploded when you are no longer attuned to it or when 24 hours have passed.</p>
             <p class="indent">The weapon contains 4 charges which recharge at dawn.</p>
 		</description>
+        <sheet action="Reaction">
+            <description>
+                <p>You have a +3 bonus to attack and damage rolls made with this magic weapon.</p> 
+                <p class="indent">As an action, you can spend one charge and hurl the weapon up to 120 feet to a point you can see. When it reaches that point, the weapon vanishes in an explosion, and each creature in a 20-foot-radius sphere centered on that point must make a DC 15 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much damage on a successful one.</p> 
+                <p class="indent">Afterward, you can use a bonus action to cause the weapon to reappear in your empty hand. If you don't call the weapon back to your hand, it reappears at the point where it exploded when you are no longer attuned to it or when 24 hours have passed.</p>
+                <p class="indent">The weapon contains 4 charges which recharge at dawn.</p>
+            </description>
+        </sheet>
 		<setters>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
@@ -22,6 +30,7 @@
 			<set name="enhancement">3</set>
 			<set name="weapon">Maul</set>
             <set name="charges">4</set>
+            <set name="attunement">true</set>
 		</setters>
 	</element>
 
