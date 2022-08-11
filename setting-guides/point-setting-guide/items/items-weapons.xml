@@ -14,11 +14,10 @@
 		<setters>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="any">Weapon</set>
+			<set name="type" addition="maul">Weapon</set>
 			<set name="rarity">Legendary</set>
 			<set name="enhancement">3</set>
 			<set name="weapon">Maul</set>
-			<set name="name-format">"Maw of the Sun"</set>
 		</setters>
 	</element>
 
