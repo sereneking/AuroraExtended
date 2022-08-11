@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Armors from Point Setting Guide</name>
+		<update version="0.0.1">
+			<file name="items-armors.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-armors.xml" />
+		</update>
+	</info>
+
+	<element name="Elven Chain +2" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_ELVEN_CHAIN_2">
+		<description>
+			<p>You gain a +2 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">chain, shirt</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="chain shirt">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Chain Shirt</set>
+			<set name="enhancement">2</set>
+			<set name="name-format">Elven {{parent}} +2</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT" />			
+		</rules>
+	</element>
+
+</elements>

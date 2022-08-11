@@ -19,6 +19,8 @@
 
 		<!-- items -->
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
+		<file name="items-armors.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-armors.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 
 		<!-- misc -->
 
