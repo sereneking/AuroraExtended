@@ -10,5 +10,17 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
+
+		<!-- races -->
+
+		<!-- classes -->
+
+		<!-- backgrounds -->
+
+		<!-- items -->
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items-weapons.xml" />
+
+		<!-- misc -->
+
 	</files>
 </index>

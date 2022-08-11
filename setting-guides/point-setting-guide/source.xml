@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1.0">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/sources.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
 		</update>
 	</info>
 
@@ -13,6 +13,7 @@
 		<setters>
 			<set name="abbreviation">PSG</set>
 			<set name="url">https://twitter.com/Drewjones13</set>
+			<set name="image">https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/PGS.png</set>
 			<set name="author" abbreviation="DJ" url="https://twitter.com/Drewjones13">Drew Jones</set>
 			<set name="official">false</set>
 			<set name="supplement">false</set>
