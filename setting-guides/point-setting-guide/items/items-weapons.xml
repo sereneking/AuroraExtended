@@ -3,7 +3,7 @@
 	<info>
 		<name>Weapons from Point Setting Guide</name>
 		<update version="0.0.1">
-			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items-weapons.xml" />
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
 		</update>
 	</info>
 
