@@ -4,7 +4,7 @@
 		<name>Setting Guides</name>
 		<description>The content from setting guide books.</description>
 		<author>Drew Jones</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="setting-guides.index" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides.index" />
 		</update>
 	</info>
