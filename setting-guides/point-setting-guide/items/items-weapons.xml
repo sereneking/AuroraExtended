@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons from Point Setting Guide</name>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -24,6 +24,62 @@
 			<set name="enhancement">3</set>
 			<set name="weapon">Maul</set>
             <set name="charges">4</set>
+            <set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Fárbauti's Fists" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_FARBUTIS_FISTS">
+		<description>
+			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon.</p> 
+            <p class="indent">Increase Strength to 18 if higher than without. +2 Strength and Strength Maximum while Raging.</p>
+            <p>Thunderclap (Bonus Action)</p>
+            <p class="indent">Create a 15ft cone dealing 2d8 Sonic damage DC: (8 + Prof + Str). For each successful hit with these weapons this Turn, increase Thunderclaps damage by 1d8</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Light Hammer">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Light Hammer</set>
+            <set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="strength:score:set" value="18" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Returning Siege Breaker" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_RETURNING_SIEGE_BREAKER">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p> 
+            <p class="indent">It returns to the wielder's hand immediately after it is used to make a ranged attack. The bonus increases to +2 when you use the mace to attack an object.</p>
+            <p></p>
+            <p class="indent">When you roll a 20 on an attack roll made with this weapon, the target takes an extra 7 bludgeoning damage, or an extra 14 bludgeoning damage if it's an object. If an object has 25 hit points or fewer after taking this damage, it is destroyed.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Light Hammer">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Light Hammer</set>
+		</setters>
+	</element>
+
+	<element name="Twin-Sided Star's Razor" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_TWIN_SIDED_STARS_RAZOR">
+		<description>
+			<p>You have a +3 bonus to attack and damage rolls made with this magic weapon.</p> 
+            <p class="indent">Savage Stars (Bonus Action): By taking a -5 to your AC, you can gain +5 additional damage to all attacks made this turn prior to using this ability.</p>
+            <p class="indent">Restless Blood (Bonus Action): You may use a Bonus Action to spend a Hit Die to increase your damage by that Hit Die Size for the next attack. If you do not spend any Hit Dice for the day in active combat with a killing intent, then start the next day by rolling your hit dice as unsoakable damage to yourself. In the event you run out of Hit Dice, the last die used is considered to be maximized.</p>
+            <p class="indent">Back Stabbing Shade (Curse): When attacks are made by you when attunded to this item, anyone within 20ft. must make a DC 18 Wisdom Saving Throw. On failure, they see you acting in a manner that is considered violent towards a precious person or innocent. Those affected by this immediately use their reaction to attack you with whatever they have at the ready. The affect lasts for 5 minutes or until the save is made at the start of their turn or they continue to treat you as a hostile. A Persuasion Skill Check can be used to straighten them out. For the next 24 hours, they cannot shake the feeling of villainry and evil coming from you.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="halbred">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Halberd</set>
             <set name="attunement">true</set>
 		</setters>
 	</element>
