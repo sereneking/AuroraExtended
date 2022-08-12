@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc Items from Point Setting Guide</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -18,6 +18,20 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Common</set>
             <set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Quiptical Hits" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_RING_OF_QUIPTICAL_HITS">		
+		<description>
+			<p>Two interlocking bands, one gold engraved with a motifs of laughing faces and the other granite with a motif of faces set in stony silence, the ring rewards the witty but punishes japes that fall flat. Once per day, on a successful attack roll, if the wearer can deliver a one-liner, quip or appropriate pun before rolling damage, the attack is converted into a critical hit. However, if the jape is deemed to have fallen flat the wearer is overcome by lethargy and behaves as if affected by the spell slow, until the end of it's next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+            <set name="charges">1</set>
 		</setters>
 	</element>
 

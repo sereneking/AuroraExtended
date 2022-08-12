@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons from Point Setting Guide</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -14,9 +14,7 @@
             <p class="indent">Afterward, you can use a bonus action to cause the weapon to reappear in your empty hand. If you don't call the weapon back to your hand, it reappears at the point where it exploded when you are no longer attuned to it or when 24 hours have passed.</p>
             <p class="indent">The weapon contains 4 charges which recharge at dawn.</p>
             <p></p>
-            <p class="indent">[ ] [ ] [ ] [ ]</p>
-            <p class="indent">[   ] [   ] [   ] [   ]</p>
-            <p class="indent">▢ ▢ ▢ ▢</p>
+            <p class="indent">[__] [__] [__] [__]</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
