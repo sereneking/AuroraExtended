@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons from Point Setting Guide</name>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -80,6 +80,29 @@
 			<set name="rarity">Legendary</set>
 			<set name="enhancement">3</set>
 			<set name="weapon">Halberd</set>
+            <set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Bow of the Fey Queen" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_BOW_OF_THE_FEY_QUEEN">
+		<description>
+			<p>You have a +3 bonus to attack and damage rolls made with this magic weapon.</p> 
+            <p class="indent">Eye of the Queen: A queen sees all and never misses her mark. User has no range limit so long as the user can see her target. (Does not have disadvantage to shoot within 5ft or point blank)</p>
+            <p class="indent">Voice of the Queen: A queen must be able to speak to her subjects regardless of the race or background. User is able to speak all languages and has advantages on insight checks to read any unknown language.</p>
+            <p class="indent">Unending Quiver: Magical enhancements in the dragon whiskers create arrows upon drawing the bow back and dismiss them if a shot is not fired when the bow is relaxed.</p>
+            <p class="indent">Armor of the Queen: A queen must draw a protective line for her subjects. You may spend a charge to cast Cordon of Arrows for free.</p>
+            <p class="indent">The weapon contains 2 charges which recharge at dawn.</p>
+            <p></p>
+            <p class="indent">[__] [__]</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Longbow</set>
+            <set name="charges">2</set>
             <set name="attunement">true</set>
 		</setters>
 	</element>
