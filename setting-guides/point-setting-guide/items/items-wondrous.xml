@@ -38,7 +38,7 @@
 		</setters>
 	</element>
 
-    <element name="Scholar's Monocale" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_SCHOLARS_MONOCALE">
+    <element name="Scholar's Monocole" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_SCHOLARS_MONOCOLE">
 		<description>
 			<p>Whilst wearing this inside any library, the wearer gains advantage or a +5 (whichever is higher) on intelligence checks to find books or information.</p>
 		</description>
