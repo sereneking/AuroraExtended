@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc Items from Point Setting Guide</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -35,6 +35,19 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Very Rare</set>
             <set name="charges">4</set>
+		</setters>
+	</element>
+
+    <element name="Scholar's Monocale" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_SCHOLARS_MONOCALE">
+		<description>
+			<p>Whilst wearing this inside any library, the wearer gains advantage or a +5 (whichever is higher) on intelligence checks to find books or information.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 
