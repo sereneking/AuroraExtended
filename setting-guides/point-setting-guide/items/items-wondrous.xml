@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc Items from Point Setting Guide</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -21,17 +21,20 @@
 		</setters>
 	</element>
 
-	<element name="Ring of Quiptical Hits" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_RING_OF_QUIPTICAL_HITS">		
+	<element name="Tap's Tactical Tincture Cincture" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_TAPS_TACTICAL_TINCTURE_CUMMERBUND">		
 		<description>
-			<p>Two interlocking bands, one gold engraved with a motifs of laughing faces and the other granite with a motif of faces set in stony silence, the ring rewards the witty but punishes japes that fall flat. Once per day, on a successful attack roll, if the wearer can deliver a one-liner, quip or appropriate pun before rolling damage, the attack is converted into a critical hit. However, if the jape is deemed to have fallen flat the wearer is overcome by lethargy and behaves as if affected by the spell slow, until the end of it's next turn.</p>
+			<p>A brass and leather belt engraved in runes with five loops to hold alcholic liquid containers. When a bottle is placed within a loop the runes along the loop alight. By spending a charge as a Free Action, you can replicate any Very Rare or lower Potion. You can also throw this item at a target to deliver the potion effect as long as the words "Order Up" are said to the target.</p>
+            <p class="indent">The weapon contains 4 charges which recharge at dawn.</p>
+            <p></p>
+            <p class="indent">[__] [__] [__] [__]</p>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">Rare</set>
-            <set name="charges">1</set>
+			<set name="rarity">Very Rare</set>
+            <set name="charges">4</set>
 		</setters>
 	</element>
 
