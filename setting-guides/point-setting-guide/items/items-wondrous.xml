@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc Items from Point Setting Guide</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -64,6 +64,22 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+    <element name="Ethereal Striders" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_ETHEREAL_STRIDERS">
+		<description>
+			<p>These black hide boots glisten when in the darkness.</p>
+            <p class="indent">As your move action you can instead teleport.</p>
+            <p class="indent">In order to teleport, choose how far you want to travel, then do an Arcana check. The DC equals 5+1 for each five feet (1 square) traveled. If you do not succeed on the DC check your teleport fails. Has 3 charges, refills charges every day at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">3</set>
 		</setters>
 	</element>
 
