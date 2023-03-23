@@ -16,6 +16,7 @@
 		<!-- classes -->
 
 		<!-- backgrounds -->
+		<file name="background-reformed-cultist.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/backgrounds/background-reformed-cultist.xml" />
 
 		<!-- items -->
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
