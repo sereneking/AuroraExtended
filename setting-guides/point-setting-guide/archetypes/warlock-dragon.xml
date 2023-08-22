@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warlock The Dragon Patron from Point Setting Guide</name>
+        <update version="0.0.1">
+			<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
+		</update>
+	</info>
+
+	<element name="The Dragon" type="Archetype" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_OTHERWORLDLY_PATRON_THE_DRAGON">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is an ancient spellcasting dragon, either a chromatic dragon (black, blue, green, red, or white) or a metallic dragon (brass, bronze, copper, gold, or silver} Dragons vary from lawful good to chaotic evil and often have far-reaching, inscrutable goals on account of their extremely long lifespans and great power. Some merely desire agents to help them locate and obtain treasures for their hoard, but most do so for reasons that may only come up once every few decades. Many ancient dragons have acquired enough magical skill to share their power in a pact. Some aspiring warlocks even make pacts with the dragon goddess Tiamat, making a bargain with one of her five heads in particular and drawing on her power as a dragon rather than as a fiend or goddess.</p>
+            <p>You choose the scales of your dragon, or determine it randomly, using the Dragon Kind table. Each dragon is associated with a damage type and a breath weapon.</p>
+            <h5 class="caption">DRAGON KIND</h5>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Dragon Patron</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>1</td><td>Black</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>2</td><td>Blue</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>3</td><td>Brass</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>4</td><td>Bronze</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>5</td><td>Copper</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>6</td><td>Gold</td><td>Acid</td><td>15ft. Cone</td></tr>
+                <tr><td>7</td><td>Green</td><td>Fire</td><td>15ft. Cone</td></tr>
+                <tr><td>8</td><td>Red</td><td>Poison</td><td>15ft. Cone</td></tr>
+                <tr><td>9</td><td>Silver</td><td>Cold</td><td>15ft. Cone</td></tr>
+                <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
+			</table>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH"/>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>
+
+		</description>
+		<sheet display="false" alt="Dragon Patron" />
+			<description>Your patron is a mighty ancient dragon, a creature of legend who grants you not only magic, but a taste of what it is to become a dragon.</description>
+		</sheet>
+		<rules>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH" level="1" />
+			<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1" />
+
+		</rules>
+	</element>
+
+	<element name="Dragon Kind" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND">
+		<description>
+			<p>You choose the scales of your dragon, or determine it randomly, using the Dragon Kind table. Each dragon is associated with a damage type and a breath weapon.</p>
+			<h5>DRAGON KIND</h5>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Dragon Patron</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>1</td><td>Black</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>2</td><td>Blue</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>3</td><td>Brass</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>4</td><td>Bronze</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+				<tr><td>5</td><td>Copper</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>6</td><td>Gold</td><td>Acid</td><td>15ft. Cone</td></tr>
+                <tr><td>7</td><td>Green</td><td>Fire</td><td>15ft. Cone</td></tr>
+                <tr><td>8</td><td>Red</td><td>Poison</td><td>15ft. Cone</td></tr>
+                <tr><td>9</td><td>Silver</td><td>Cold</td><td>15ft. Cone</td></tr>
+                <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Your patron is a {{dragon kind}} dragon. Your damage type is {{dragon kind:damage type}} and breath weapon is {{dragon kind:breath weapon}}.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Dragon Kind" supports="DJ PSG Dragon Kind" />
+		</rules>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />
+
+</elements>
