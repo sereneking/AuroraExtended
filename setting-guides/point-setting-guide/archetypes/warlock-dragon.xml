@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
 			<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
 		</update>
 	</info>
@@ -72,5 +72,138 @@
 	</element>
 	<!--Feature Replacement Grants-->
 	<!--<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />-->
+
+	<element name="Dragon Kind (Black)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Black"/>
+			<stat inline="true" name="dragon kind:damage type" value="Acid" />
+            <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Blue)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Blue"/>
+			<stat inline="true" name="dragon kind:damage type" value="Lightning" />
+            <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Brass)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Brass"/>
+			<stat inline="true" name="dragon kind:damage type" value="Fire" />
+            <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Bronze)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Bronze"/>
+			<stat inline="true" name="dragon kind:damage type" value="Lightning" />
+            <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Copper)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Copper"/>
+			<stat inline="true" name="dragon kind:damage type" value="Fire" />
+            <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Gold)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GOLD">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Gold"/>
+			<stat inline="true" name="dragon kind:damage type" value="Acid" />
+            <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Green)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GREEN">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Green"/>
+			<stat inline="true" name="dragon kind:damage type" value="Fire" />
+            <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Red)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Red"/>
+			<stat inline="true" name="dragon kind:damage type" value="Poison" />
+            <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (Silver)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="Silver"/>
+			<stat inline="true" name="dragon kind:damage type" value="Cold" />
+            <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
+		</rules>
+	</element>
+	<element name="Dragon Kind (White)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE">
+		<supports>DJ PSG Dragon Kind</supports>
+		<compendium display="false" />
+		<description>
+			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="dragon kind" value="White"/>
+			<stat inline="true" name="dragon kind:damage type" value="Cold" />
+            <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
+		</rules>
+	</element>
+
+
 
 </elements>
