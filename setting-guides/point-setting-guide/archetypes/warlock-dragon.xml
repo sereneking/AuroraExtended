@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -136,110 +136,7 @@
         </spellcasting>
     </element>
 
-    <element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK">
-        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST</requirements>
-        <description>
-            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
-            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Blue Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>Radic's sudden spark</em></td></tr>
-                <tr><td>2nd</td><td><em>dust devil (XGE)</em></td></tr>
-                <tr><td>3rd</td><td><em>lightning bolt</em></td></tr>
-                <tr><td>4th</td><td><em>storm sphere (XGE)</em></td></tr>
-                <tr><td>5th</td><td><em>fingers of lightning</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Brass Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>burning hands</em></td></tr>
-                <tr><td>2nd</td><td><em>scorching ray</em></td></tr>
-                <tr><td>3rd</td><td><em>fireball</em></td></tr>
-                <tr><td>4th</td><td><em>fire shield</em></td></tr>
-                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Bronze Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>thunderwave</em></td></tr>
-                <tr><td>2nd</td><td><em>drown</em></td></tr>
-                <tr><td>3rd</td><td><em>lightning bolt</em></td></tr>
-                <tr><td>4th</td><td><em>storm sphere (XGE)</em></td></tr>
-                <tr><td>5th</td><td><em>fingers of lightning</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Copper Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>Tasha's caustic brew (TCE)</em></td></tr>
-                <tr><td>2nd</td><td><em>Melf's acid arrow</em></td></tr>
-                <tr><td>3rd</td><td><em>acid cloud</em></td></tr>
-                <tr><td>4th</td><td><em>glistening acid slick</em></td></tr>
-                <tr><td>5th</td><td><em>sinking maw</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Gold Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>burning hands</em></td></tr>
-                <tr><td>2nd</td><td><em>heat metal</em></td></tr>
-                <tr><td>3rd</td><td><em>fireball</em></td></tr>
-                <tr><td>4th</td><td><em>fire shield</em></td></tr>
-                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Green Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>ray of sickness</em></td></tr>
-                <tr><td>2nd</td><td><em>protection from poison</em></td></tr>
-                <tr><td>3rd</td><td><em>toxic breath</em></td></tr>
-                <tr><td>4th</td><td><em>envenomed weapon</em></td></tr>
-                <tr><td>5th</td><td><em>cloudkill</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Red Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>burning hands</em></td></tr>
-                <tr><td>2nd</td><td><em>flaming sphere</em></td></tr>
-                <tr><td>3rd</td><td><em>fireball</em></td></tr>
-                <tr><td>4th</td><td><em>fire shield</em></td></tr>
-                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>Silver Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>fog cloud</em></td></tr>
-                <tr><td>2nd</td><td><em>gust of wind</em></td></tr>
-                <tr><td>3rd</td><td><em>cold snap</em></td></tr>
-                <tr><td>4th</td><td><em>ice storm</em></td></tr>
-                <tr><td>5th</td><td><em>cone of cold</em></td></tr>
-            </table>
-            <table>
-                <thead>
-                    <tr><td>Spell Level</td><td>White Spells</td></tr>
-                </thead>
-                <tr><td>1st</td><td><em>fog cloud</em></td></tr>
-                <tr><td>2nd</td><td><em>ice sculpture</em></td></tr>
-                <tr><td>3rd</td><td><em>cold snap</em></td></tr>
-                <tr><td>4th</td><td><em>ice storm</em></td></tr>
-                <tr><td>5th</td><td><em>cone of cold</em></td></tr>
-            </table>
-
-        </description>
-        <sheet display="false">
-            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
-        </sheet>
-        <spellcasting name="Warlock" extend="true">
-            <extend>ID_XGTE_SPELL_DRAGONS_BREATH</extend>
-        </spellcasting>
-    </element>
+    
 
 
 
