@@ -38,8 +38,8 @@
         <rules>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1"/>
-            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK"/>
-            <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE"/>
+            <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER"/>
@@ -108,7 +108,7 @@
             <extend>ID_PHB_SPELL_SHAPECHANGE</extend>
         </spellcasting>
     </element>
-   <element name="Expanded Spell Lis" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK">
+<!---   <element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLACK</requirements>
         <description>
             <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
@@ -135,7 +135,7 @@
             <extend>ID_XGTE_SPELL_MAELSTROM</extend>
         </spellcasting>
     </element>
-
+-->
     
 
 
@@ -155,6 +155,13 @@
             <stat inline="true" name="dragon kind:damage type" value="Acid" />
             <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
         </rules>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+            <extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+            <extend>ID_DJ_PSG_SPELL_ACID_CLOUD</extend>
+            <extend>ID_DJ_PSG_SPELL_GLISTENING_ACID_SLICK</extend>
+            <extend>ID_XGTE_SPELL_MAELSTROM</extend>
+        </spellcasting>
     </element>
     <element name="Dragon Kind (Blue)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE">
         <supports>DJ PSG Dragon Kind</supports>
