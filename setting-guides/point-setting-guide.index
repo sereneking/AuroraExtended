@@ -4,7 +4,7 @@
         <name>Point Setting Guide</name>
         <description>The official setting guide for the world of Point.</description>
         <author url="https://twitter.com/Drewjones13">Drew Jones</author>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <file name="point-setting-guide.index" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide.index" />
         </update>
     </info>
@@ -19,6 +19,9 @@
         <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
 
         <!-- backgrounds -->
+
+        <!-- spells -->
+        <file name="unleased-spells.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/spells/unleashed-spells.xml" />
 
         <!-- items -->
         <file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />

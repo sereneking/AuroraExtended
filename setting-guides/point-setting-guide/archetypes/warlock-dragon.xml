@@ -1,208 +1,381 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<info>
-		<name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.2">
-			<file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
-		</update>
-	</info>
+    <info>
+        <name>Warlock The Dragon Patron from Point Setting Guide</name>
+        <update version="0.0.4">
+            <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
+        </update>
+    </info>
 
-	<element name="The Dragon" type="Archetype" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_OTHERWORLDLY_PATRON_THE_DRAGON">
-		<supports>Otherworldly Patron</supports>
-		<description>
-			<p>Your patron is an ancient spellcasting dragon, either a chromatic dragon (black, blue, green, red, or white) or a metallic dragon (brass, bronze, copper, gold, or silver} Dragons vary from lawful good to chaotic evil and often have far-reaching, inscrutable goals on account of their extremely long lifespans and great power. Some merely desire agents to help them locate and obtain treasures for their hoard, but most do so for reasons that may only come up once every few decades. Many ancient dragons have acquired enough magical skill to share their power in a pact. Some aspiring warlocks even make pacts with the dragon goddess Tiamat, making a bargain with one of her five heads in particular and drawing on her power as a dragon rather than as a fiend or goddess.</p>
+    <element name="The Dragon" type="Archetype" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_OTHERWORLDLY_PATRON_THE_DRAGON">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>Your patron is an ancient spellcasting dragon, either a chromatic dragon (black, blue, green, red, or white) or a metallic dragon (brass, bronze, copper, gold, or silver} Dragons vary from lawful good to chaotic evil and often have far-reaching, inscrutable goals on account of their extremely long lifespans and great power. Some merely desire agents to help them locate and obtain treasures for their hoard, but most do so for reasons that may only come up once every few decades. Many ancient dragons have acquired enough magical skill to share their power in a pact. Some aspiring warlocks even make pacts with the dragon goddess Tiamat, making a bargain with one of her five heads in particular and drawing on her power as a dragon rather than as a fiend or goddess.</p>
             <p>You choose the scales of your dragon, or determine it randomly, using the Dragon Kind table. Each dragon is associated with a damage type and a breath weapon.</p>
             <h5 class="caption">DRAGON KIND</h5>
-			<table>
-				<thead>
-					<tr><td>d10</td><td>Dragon Patron</td><td>Damage Type</td><td>Breath Weapon</td></tr>
-				</thead>
-				<tr><td>1</td><td>Black</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>2</td><td>Blue</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>3</td><td>Brass</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>4</td><td>Bronze</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>5</td><td>Copper</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+            <table>
+                <thead>
+                    <tr><td>d10</td><td>Dragon Patron</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+                </thead>
+                <tr><td>1</td><td>Black</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>2</td><td>Blue</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>3</td><td>Brass</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>4</td><td>Bronze</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>5</td><td>Copper</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
                 <tr><td>6</td><td>Gold</td><td>Acid</td><td>15ft. Cone</td></tr>
                 <tr><td>7</td><td>Green</td><td>Fire</td><td>15ft. Cone</td></tr>
                 <tr><td>8</td><td>Red</td><td>Poison</td><td>15ft. Cone</td></tr>
                 <tr><td>9</td><td>Silver</td><td>Cold</td><td>15ft. Cone</td></tr>
                 <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
-			</table>
+            </table>
             <!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH"/>-->
-			<!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>-->
+            <!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>-->
 
-		</description>
-		<sheet display="false" alt="Dragon Patron">
-			<description>Your patron is a mighty ancient dragon, a creature of legend who grants you not only magic, but a taste of what it is to become a dragon.</description>
-		</sheet>
-		<rules>
+        </description>
+        <sheet display="false" alt="Dragon Patron">
+            <description>Your patron is a mighty ancient dragon, a creature of legend who grants you not only magic, but a taste of what it is to become a dragon.</description>
+        </sheet>
+        <rules>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK"/>
+            <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GOLD" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GOLD"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GREEN" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GREEN"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE"/>-->
             <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH" level="1" />-->
-			<!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1" />-->
+            
 
-		</rules>
-	</element>
-
-	<element name="Dragon Kind" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND">
-		<description>
-			<p>You choose the scales of your dragon, or determine it randomly, using the Dragon Kind table. Each dragon is associated with a damage type and a breath weapon.</p>
-			<h5>DRAGON KIND</h5>
-			<table>
-				<thead>
-					<tr><td>d10</td><td>Dragon Patron</td><td>Damage Type</td><td>Breath Weapon</td></tr>
-				</thead>
-				<tr><td>1</td><td>Black</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>2</td><td>Blue</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>3</td><td>Brass</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>4</td><td>Bronze</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
-				<tr><td>5</td><td>Copper</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
-                <tr><td>6</td><td>Gold</td><td>Acid</td><td>15ft. Cone</td></tr>
-                <tr><td>7</td><td>Green</td><td>Fire</td><td>15ft. Cone</td></tr>
-                <tr><td>8</td><td>Red</td><td>Poison</td><td>15ft. Cone</td></tr>
+        </rules>
+    </element>
+    <element name="Dragon Kind" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND">
+        <description>
+            <p>You choose the scales of your dragon, or determine it randomly, using the Dragon Kind table. Each dragon is associated with a damage type and a breath weapon.</p>
+            <h5>DRAGON KIND</h5>
+            <table>
+                <thead>
+                    <tr><td>d10</td><td>Dragon Patron</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+                </thead>
+                <tr><td>1</td><td>Black</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>2</td><td>Blue</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>3</td><td>Brass</td><td>Fire</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>4</td><td>Bronze</td><td>Lightning</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>5</td><td>Copper</td><td>Acid</td><td>5 by 30ft. Line</td></tr>
+                <tr><td>6</td><td>Gold</td><td>Fire</td><td>15ft. Cone</td></tr>
+                <tr><td>7</td><td>Green</td><td>Poison</td><td>15ft. Cone</td></tr>
+                <tr><td>8</td><td>Red</td><td>Fire</td><td>15ft. Cone</td></tr>
                 <tr><td>9</td><td>Silver</td><td>Cold</td><td>15ft. Cone</td></tr>
                 <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
-			</table>
-		</description>
-		<sheet>
-			<description>Your patron is a {{dragon kind}} dragon. Your damage type is {{dragon kind:damage type}} and breath weapon is {{dragon kind:breath weapon}}.</description>
-		</sheet>
-		<rules>
-			<select type="Archetype Feature" name="Dragon Kind" supports="DJ PSG Dragon Kind" />
-		</rules>
-	</element>
-	<!--Feature Replacement Grants-->
-	<!--<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />-->
+            </table>
+        </description>
+        <sheet>
+            <description>Your patron is a {{dragon kind}} dragon. Your damage type is {{dragon kind:damage type}} and breath weapon is {{dragon kind:breath weapon}}.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Dragon Kind" supports="DJ PSG Dragon Kind" />
+        </rules>
+    </element>
+    <element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Dragon Spells (All Types)</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>chromatic orb</em></td></tr>
+                <tr><td>2nd</td><td><em>dragon's breath (XGE)</em></td></tr>
+                <tr><td>3rd</td><td><em>protection from engery</em></td></tr>
+                <tr><td>4th</td><td><em>stoneskin (as scales)</em></td></tr>
+                <tr><td>5th</td><td><em>bigby's hand (as a claw)</em></td></tr>
+                <tr><td>9th</td><td><em>shapechange (dragons only)</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_CHROMATIC_ORB</extend>
+            <extend>ID_XGTE_SPELL_DRAGONS_BREATH</extend>
+            <extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
+            <extend>ID_PHB_SPELL_STONESKIN</extend>
+            <extend>ID_PHB_SPELL_SHAPECHANGE</extend>
+        </spellcasting>
+    </element>
+   <element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLACK</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Black Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>Tasha's caustic brew (TCE)</em></td></tr>
+                <tr><td>2nd</td><td><em>Melf's acid arrow</em></td></tr>
+                <tr><td>3rd</td><td><em>acid cloud</em></td></tr>
+                <tr><td>4th</td><td><em>glistening acid slick</em></td></tr>
+                <tr><td>5th</td><td><em>maelstorm (XGE)</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+            <extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+            <extend>ID_DJ_PSG_SPELL_ACID_CLOUD</extend>
+            <extend>ID_DJ_PSG_SPELL_GLISTENING_ACID_SLICK</extend>
+            <extend>ID_XGTE_SPELL_MAELSTROM</extend>
+        </spellcasting>
+    </element>
 
-	<element name="Dragon Kind (Black)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Black"/>
-			<stat inline="true" name="dragon kind:damage type" value="Acid" />
+    <element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Blue Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>Radic's sudden spark</em></td></tr>
+                <tr><td>2nd</td><td><em>dust devil (XGE)</em></td></tr>
+                <tr><td>3rd</td><td><em>lightning bolt</em></td></tr>
+                <tr><td>4th</td><td><em>storm sphere (XGE)</em></td></tr>
+                <tr><td>5th</td><td><em>fingers of lightning</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Brass Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands</em></td></tr>
+                <tr><td>2nd</td><td><em>scorching ray</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball</em></td></tr>
+                <tr><td>4th</td><td><em>fire shield</em></td></tr>
+                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Bronze Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>thunderwave</em></td></tr>
+                <tr><td>2nd</td><td><em>drown</em></td></tr>
+                <tr><td>3rd</td><td><em>lightning bolt</em></td></tr>
+                <tr><td>4th</td><td><em>storm sphere (XGE)</em></td></tr>
+                <tr><td>5th</td><td><em>fingers of lightning</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Copper Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>Tasha's caustic brew (TCE)</em></td></tr>
+                <tr><td>2nd</td><td><em>Melf's acid arrow</em></td></tr>
+                <tr><td>3rd</td><td><em>acid cloud</em></td></tr>
+                <tr><td>4th</td><td><em>glistening acid slick</em></td></tr>
+                <tr><td>5th</td><td><em>sinking maw</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Gold Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands</em></td></tr>
+                <tr><td>2nd</td><td><em>heat metal</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball</em></td></tr>
+                <tr><td>4th</td><td><em>fire shield</em></td></tr>
+                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Green Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>ray of sickness</em></td></tr>
+                <tr><td>2nd</td><td><em>protection from poison</em></td></tr>
+                <tr><td>3rd</td><td><em>toxic breath</em></td></tr>
+                <tr><td>4th</td><td><em>envenomed weapon</em></td></tr>
+                <tr><td>5th</td><td><em>cloudkill</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Red Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands</em></td></tr>
+                <tr><td>2nd</td><td><em>flaming sphere</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball</em></td></tr>
+                <tr><td>4th</td><td><em>fire shield</em></td></tr>
+                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Silver Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>fog cloud</em></td></tr>
+                <tr><td>2nd</td><td><em>gust of wind</em></td></tr>
+                <tr><td>3rd</td><td><em>cold snap</em></td></tr>
+                <tr><td>4th</td><td><em>ice storm</em></td></tr>
+                <tr><td>5th</td><td><em>cone of cold</em></td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>White Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>fog cloud</em></td></tr>
+                <tr><td>2nd</td><td><em>ice sculpture</em></td></tr>
+                <tr><td>3rd</td><td><em>cold snap</em></td></tr>
+                <tr><td>4th</td><td><em>ice storm</em></td></tr>
+                <tr><td>5th</td><td><em>cone of cold</em></td></tr>
+            </table>
+
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_XGTE_SPELL_DRAGONS_BREATH</extend>
+        </spellcasting>
+    </element>
+
+
+
+    <!--Feature Replacement Grants-->
+    <!--<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />-->
+
+    <element name="Dragon Kind (Black)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Black"/>
+            <stat inline="true" name="dragon kind:damage type" value="Acid" />
             <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Blue)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Blue"/>
-			<stat inline="true" name="dragon kind:damage type" value="Lightning" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Blue)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Blue"/>
+            <stat inline="true" name="dragon kind:damage type" value="Lightning" />
             <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Brass)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Brass"/>
-			<stat inline="true" name="dragon kind:damage type" value="Fire" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Brass)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Brass"/>
+            <stat inline="true" name="dragon kind:damage type" value="Fire" />
             <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Bronze)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Bronze"/>
-			<stat inline="true" name="dragon kind:damage type" value="Lightning" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Bronze)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Bronze"/>
+            <stat inline="true" name="dragon kind:damage type" value="Lightning" />
             <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Copper)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Copper"/>
-			<stat inline="true" name="dragon kind:damage type" value="Fire" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Copper)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Copper"/>
+            <stat inline="true" name="dragon kind:damage type" value="Fire" />
             <stat inline="true" name="dragon kind:breath weapon" value="5 by 30ft. Line" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Gold)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GOLD">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Gold"/>
-			<stat inline="true" name="dragon kind:damage type" value="Acid" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Gold)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GOLD">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Gold"/>
+            <stat inline="true" name="dragon kind:damage type" value="Acid" />
             <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Green)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GREEN">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Green"/>
-			<stat inline="true" name="dragon kind:damage type" value="Fire" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Green)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GREEN">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Green"/>
+            <stat inline="true" name="dragon kind:damage type" value="Fire" />
             <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Red)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Red"/>
-			<stat inline="true" name="dragon kind:damage type" value="Poison" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Red)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Red"/>
+            <stat inline="true" name="dragon kind:damage type" value="Poison" />
             <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (Silver)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="Silver"/>
-			<stat inline="true" name="dragon kind:damage type" value="Cold" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (Silver)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="Silver"/>
+            <stat inline="true" name="dragon kind:damage type" value="Cold" />
             <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
-		</rules>
-	</element>
-	<element name="Dragon Kind (White)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE">
-		<supports>DJ PSG Dragon Kind</supports>
-		<compendium display="false" />
-		<description>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat inline="true" name="dragon kind" value="White"/>
-			<stat inline="true" name="dragon kind:damage type" value="Cold" />
+        </rules>
+    </element>
+    <element name="Dragon Kind (White)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE">
+        <supports>DJ PSG Dragon Kind</supports>
+        <compendium display="false" />
+        <description>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="dragon kind" value="White"/>
+            <stat inline="true" name="dragon kind:damage type" value="Cold" />
             <stat inline="true" name="dragon kind:breath weapon" value="15ft. Cone" />
-		</rules>
-	</element>
+        </rules>
+    </element>
 
 
 
