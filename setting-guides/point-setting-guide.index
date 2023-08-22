@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
-	<info>
-		<name>Point Setting Guide</name>
-		<description>The official setting guide for the world of Point.</description>
-		<author url="https://twitter.com/Drewjones13">Drew Jones</author>
-		<update version="0.0.1">
-			<file name="point-setting-guide.index" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide.index" />
-		</update>
-	</info>
-	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
+    <info>
+        <name>Point Setting Guide</name>
+        <description>The official setting guide for the world of Point.</description>
+        <author url="https://twitter.com/Drewjones13">Drew Jones</author>
+        <update version="0.0.1">
+            <file name="point-setting-guide.index" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide.index" />
+        </update>
+    </info>
+    <files>
+        <file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
 
-		<!-- races -->
+        <!-- races -->
 
-		<!-- classes -->
+        <!-- classes -->
 
         <!-- archetypes -->
         <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
 
-		<!-- backgrounds -->
+        <!-- backgrounds -->
 
-		<!-- items -->
-		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
-		<file name="items-armors.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-armors.xml" />
-		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
+        <!-- items -->
+        <file name="items-weapons.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-weapons.xml" />
+        <file name="items-armors.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-armors.xml" />
+        <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 
-		<!-- misc -->
+        <!-- misc -->
 
-	</files>
+    </files>
 </index>
