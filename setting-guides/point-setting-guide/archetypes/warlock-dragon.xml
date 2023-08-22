@@ -28,8 +28,8 @@
                 <tr><td>9</td><td>Silver</td><td>Cold</td><td>15ft. Cone</td></tr>
                 <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
 			</table>
-            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH"/>
-			<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>
+            <!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH"/>-->
+			<!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>-->
 
 		</description>
 		<sheet display="false" alt="Dragon Patron">
@@ -71,6 +71,6 @@
 		</rules>
 	</element>
 	<!--Feature Replacement Grants-->
-	<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />
+	<!--<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />-->
 
 </elements>
