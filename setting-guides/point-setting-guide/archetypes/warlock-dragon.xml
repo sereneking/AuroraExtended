@@ -37,8 +37,8 @@
 		</sheet>
 		<rules>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
-            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH" level="1" />
-			<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1" />
+            <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH" level="1" />-->
+			<!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1" />-->
 
 		</rules>
 	</element>
