@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="spells.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/spells/unleashed-spells.xml" />
         </update>
     </info>
@@ -28,6 +28,99 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+
+    <element name="Cold Snap" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_COLD_SNAP">
+        <supports>Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
+        <description>
+            <p>With a snap of your fingers you banish heat from a target. There are two possible uses for the spell: targeting either one creature that you can see within range or targeting an area of liquid, such as water, acid, mud, snow, quicksand, or lava.</p>
+            <p class="indent">If you target a creature, it must make a Constitution saving throw. On a failure, the target takes Sdl0 cold damage and until the end of your next turn, its speed is reduced to 0 feet and it has disadvantage on weapon attack rolls. It also gains one level of exhaustion unless it has resistance or immunity to the spell's damage. On a success, it only takes half damage and it doesn't suffer any other effects.</p>
+            <p class="indent">If you target an area, your magic affects a portion of liquid that you can see within range and fits into a 30 foot cube. The affected liquid is frozen solid for 10 minutes, provided that there are no creatures in the area. Not all liquids lose their properties when frozen. For example, frozen lava may still be extremely hot to the touch, and frozen acid may still sting or even cause damage in extreme concentrations.</p>
+            <p class="indent">Any levels of exhaustion caused by this spell are removed from a creature when it finishes a short or long rest in a warm environment.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage dealt increases by ldlO for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">evocation</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 round or up to 10 minutes</set>
+            <set name="range">60ft.</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Drown" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_DROWN">
+        <supports>Druid, Ranger, Sorcerer, Warlock, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a globe of magical water to surround a foe's head and drown it. Choose one creature in range that you can see. The target must make a Strength saving throw. On a failed saving throw, the target cannot speak and has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight or hearing until the spell ends. While the spell continues, it takes 2d8 bludgeoning damage at the start of each of its turns.</p>
+            <p class="indent">At the end of each of its turns, the creature can repeat the saving throw. On a success, the creature breaks free and the spell ends. Creatures that can breathe water or do not have to breathe automatically succeed on the saving throw.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage dealt increases by ld8 for each slot level above 2nd When you cast this spell using a spell slot of 5th level or higher, the duration increases to Concentration up to 10 minutes, and the target can only hold its breath for up to 30 seconds before suffocating.</p>
+        </description>
+        <setters>
+            <set name="keywords">conjuration</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="range">60ft.</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(teeth, seaweed, and seawater)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Envenomed Weapon" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_ENVENOMED_WEAPON">
+        <supports>Artificer, Druid, Ranger, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You touch a weapon and wreathe it in magical venom. Until the spell ends, the weapon is magical if it wasn't already, and each time an attack using the weapon hits a creature, it must succeed on a Constitution saving throw or take 3d6 extra poison damage from the attack.</p>
+        </description>
+        <setters>
+            <set name="keywords">conjuration</set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="range">Touch</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(a vial of poison)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Fingers of Lightning" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_FINGERS_OF_LIGHTNING">
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Your hands arc with electricity as you create 4 lines, each 100 feet long and 5 feet wide, emanating from you in directions of your choice. Each line has its own direction and lines can overlap, but they must all fit within a 180 degree angle from you.</p>
+            <p class="indent">Each creature within the spell's area must make a Dexterity saving throw. On a failed save, a creature takes 7d6 lightning damage plus ld6 lightning damage for each line area that they are within. On a successful save, a creature takes half as much damage.</p>
+            <p class="indent">The lightning ignites flammable objects in the area that aren't being worn or carried.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, you create an additional line of lightning for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords">evocation</set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">Self(100ft. Line)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(a bit of fur; a piece of amber, glass or a crystal rod; and four copper pins)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
     <element name="Glistening Acid Slick" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_GLISTENING_ACID_SLICK">
         <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
         <description>
@@ -51,10 +144,98 @@
     </element>
 
 
+    <element name="Ice Sculpture" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_ICE_SCULPTURE">
+        <supports>Artificer, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a magical chunk of ice into an unoccupied space that you can see within range. The ice created must be no larger than a 10-foot cube, and the ice must be of a form that you have seen before, though the form need not have been made of ice when you saw it. This spell cannot create complicated machinery with moving parts, such as a clock or firearm. When you cast the spelL you also choose whether the ice is clear and transparent or cloudy and heavily obscured.</p>
+            <p class="indent">The ice has hit points equal to 5d8 + twice your spellcasting modifier (minimum 5 hit points) and its AC is equal to 10 + your spellcasting modifier. It has immunity to cold damage, but it has vulnerability to bludgeoning, fire, and thunder damage. The ice object is destroyed when it reaches O hit points or the spell ends.</p>
+            <p class="indent">The ice melts after 2d4 minutes in a hot environment, and only 1 minute in an extremely hot environment.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the hit points of the ice increase by 2d8 for each slot level above 2nd, and the maximum size of the object increases by 5 feet for every 3 slot levels above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">conjuration</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="range">30ft.</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
 
+    <element name="Radic's Sudden Spark" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_RADICS_SUDDEN_SPARK">
+        <supports>Artificer, Ranger, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You electrify the attacker's weapon as it strikes its target. The spell deals a creature 2d6 lightning damage on a failed Constitution saving throw, or half as much damage on a successful save. If the attack was a critical hit, the damage increases by ld6. The spell's target is determined by who made the triggering attack:</p>
+            <p class="indent"><strong><em>Defensive.</em></strong> If you were hit by the triggering attack, the attacker rolls the saving throw, with disadvantage if it used a metal weapon to make the attack. On a failed saving throw, it also drops the weapon used in the attack.</p>
+            <p class="indent"><strong><em>Offensive.</em></strong> If you made the triggering attack, the target of your attack rolls the saving throw, with disadvantage if it is wearing armor made of metal On a failed saving throw, it also can't take reactions until the start of your next turn.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by ld6 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">evocation</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 reaction, which you take when you hit with a melee weapon attack or are hit by a melee weapon attack</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
+    <element name="Sinking Maw" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_SINKING_MAW">
+        <supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Choose a point on the ground that you can see within range. Ground within 30 feet of that point becomes swirling sand until the spell ends. The sand is difficult terrain. Each creature standing on the sand when the spell is cast must make a Dexterity saving throw. Any creature that enters the area for the first time on a turn or starts its turn within the area must also make the saving throw. On a failure, a creature sinks halfway into the sand and becomes restrained by the ground</p>
+            <p class="indent">Until the spell ends, if a creature ends its turn while restrained by the ground in this way, it is pulled up to 10 feet toward the center of the area. A restrained creature can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself and clambers onto the surface.</p>
+            <p class="indent">When the spell ends, either because your concentration is broken or because you decide to end it, the ground returns to the solid form it had before the spell was cast. Each creature restrained by the spell must make a Constitution saving throw. A creature takes 9d6 nonmagical bludgeoning damage on a failed save, or half as much damage on a success. Creatures are still restrained by the solid ground (not by any creature or spell) until they escape, and they have disadvantage on ability checks made to escape solid ground</p>
+            <p class="indent">Creatures with a burrowing speed can't be restrained by the ground using this spell</p>
+        </description>
+        <setters>
+            <set name="keywords">transmutation</set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="range">150ft.</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(an antlion shell filled with sand)</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
+    <element name="Toxic Breath" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_TOXIC_BREATH">
+        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You exhale a cloud of misty vapor in a 30 foot cone in front of you. Each creature in the cone must make a Constitution saving throw. On a failure, a creature takes 8d6 poison damage, and it is poisoned until the start of your next turn. While poisoned in this way, its speed is reduced by half. On a success, a creature takes half damage and is not poisoned</p>
+            <p class="indent"><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 4th level or higher, the damage dealt increases by ld6 for each slot level above 3rd</p>
+        </description>
+        <setters>
+            <set name="keywords">conjuration</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 round</set>
+            <set name="range">Self(30ft. Cone)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">(a lead ring or green dragon's scale)</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 
 
 

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -29,7 +29,17 @@
                 <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
             </table>
             <!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH"/>-->
-            <!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>-->
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GOLD"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GREEN"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE"/>
 
         </description>
         <sheet display="false" alt="Dragon Patron">
@@ -39,7 +49,7 @@
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK"/>
-            <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER"/>
@@ -47,7 +57,7 @@
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GREEN" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GREEN"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER"/>
-            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE"/>-->
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE"/>
             <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH" level="1" />-->
             
 
@@ -135,9 +145,249 @@
             <extend>ID_XGTE_SPELL_MAELSTROM</extend>
         </spellcasting>
     </element>
-
-    
-
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLUE</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Blue Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>Radic's sudden spark</em></td></tr>
+                <tr><td>2nd</td><td><em>dust devil (XGE)</em></td></tr>
+                <tr><td>3rd</td><td><em>lightning bolt</em></td></tr>
+                <tr><td>4th</td><td><em>storm sphere (XGE)</em></td></tr>
+                <tr><td>5th</td><td><em>fingers of lightning</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_DJ_PSG_SPELL_RADICS_SUDDEN_SPARK</extend>
+            <extend>ID_XGTE_SPELL_DUST_DEVIL</extend>
+            <extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+            <extend>ID_XGTE_SPELL_STORM_SPHERE</extend>
+            <extend>ID_DJ_PSG_SPELL_FINGERS_OF_LIGHTNING</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BRASS</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Brass Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands</em></td></tr>
+                <tr><td>2nd</td><td><em>scorching ray</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball</em></td></tr>
+                <tr><td>4th</td><td><em>fire shield</em></td></tr>
+                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+            <extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+            <extend>ID_PHB_SPELL_FIREBALL</extend>
+            <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+            <extend>ID_XGTE_SPELL_IMMOLATION</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BRONZE</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Bronze Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>thunderwave</em></td></tr>
+                <tr><td>2nd</td><td><em>drown</em></td></tr>
+                <tr><td>3rd</td><td><em>lightning bolt</em></td></tr>
+                <tr><td>4th</td><td><em>storm sphere (XGE)</em></td></tr>
+                <tr><td>5th</td><td><em>fingers of lightning</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+            <extend>ID_DJ_PSG_SPELL_DROWN</extend>
+            <extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+            <extend>ID_XGTE_SPELL_STORM_SPHERE</extend>
+            <extend>ID_DJ_PSG_SPELL_FINGERS_OF_LIGHTNING</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_COPPER</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Copper Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>Tasha's caustic brew (TCE)</em></td></tr>
+                <tr><td>2nd</td><td><em>Melf's acid arrow</em></td></tr>
+                <tr><td>3rd</td><td><em>acid cloud</em></td></tr>
+                <tr><td>4th</td><td><em>glistening acid slick</em></td></tr>
+                <tr><td>5th</td><td><em>sinking maw</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+            <extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+            <extend>ID_DJ_PSG_SPELL_ACID_CLOUD</extend>
+            <extend>ID_DJ_PSG_SPELL_GLISTENING_ACID_SLICK</extend>
+            <extend>ID_DJ_PSG_SPELL_SINKING_MAW</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GOLD">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_GOLD</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Gold Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands</em></td></tr>
+                <tr><td>2nd</td><td><em>heat metal</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball</em></td></tr>
+                <tr><td>4th</td><td><em>fire shield</em></td></tr>
+                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+            <extend>ID_PHB_SPELL_HEAT_METAL</extend>
+            <extend>ID_PHB_SPELL_FIREBALL</extend>
+            <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+            <extend>ID_XGTE_SPELL_IMMOLATION</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GREEN">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_GREEN</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Green Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>ray of sickness</em></td></tr>
+                <tr><td>2nd</td><td><em>protection from poison</em></td></tr>
+                <tr><td>3rd</td><td><em>toxic breath</em></td></tr>
+                <tr><td>4th</td><td><em>envenomed weapon</em></td></tr>
+                <tr><td>5th</td><td><em>cloudkill</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+            <extend>ID_PHB_SPELL_PROTECTION_FROM_POISON</extend>
+            <extend>ID_DJ_PSG_SPELL_TOXIC_BREATH</extend>
+            <extend>ID_DJ_PSG_SPELL_ENVENOMED_WEAPON</extend>
+            <extend>ID_PHB_SPELL_CLOUDKILL</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_RED</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Red Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>burning hands</em></td></tr>
+                <tr><td>2nd</td><td><em>flaming sphere</em></td></tr>
+                <tr><td>3rd</td><td><em>fireball</em></td></tr>
+                <tr><td>4th</td><td><em>fire shield</em></td></tr>
+                <tr><td>5th</td><td><em>immolation (XGE)</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+            <extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+            <extend>ID_PHB_SPELL_FIREBALL</extend>
+            <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+            <extend>ID_XGTE_SPELL_IMMOLATION</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_SILVER</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Silver Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>fog cloud</em></td></tr>
+                <tr><td>2nd</td><td><em>gust of wind</em></td></tr>
+                <tr><td>3rd</td><td><em>cold snap</em></td></tr>
+                <tr><td>4th</td><td><em>ice storm</em></td></tr>
+                <tr><td>5th</td><td><em>cone of cold</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+            <extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+            <extend>ID_DJ_PSG_COLD_SNAP</extend>
+            <extend>ID_PHB_SPELL_ICE_STORM</extend>
+            <extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+        </spellcasting>
+    </element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_WHITE</requirements>
+        <description>
+            <p>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell The Dragon Expanded Spells table shows the dragon spells that are added to the warlock spell list for you, along with the spells associated in the table with our dragon's kind</p>
+            <h5 class="caption">DRAGON EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>White Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>fog cloud</em></td></tr>
+                <tr><td>2nd</td><td><em>ice sculpture</em></td></tr>
+                <tr><td>3rd</td><td><em>cold snap</em></td></tr>
+                <tr><td>4th</td><td><em>ice storm</em></td></tr>
+                <tr><td>5th</td><td><em>cone of cold</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The Dragon lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+            <extend>ID_DJ_PSG_SPELL_ICE_SCULPTURE</extend>
+            <extend>ID_DJ_PSG_COLD_SNAP</extend>
+            <extend>ID_PHB_SPELL_ICE_STORM</extend>
+            <extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+        </spellcasting>
+    </element>
 
 
     <!--Feature Replacement Grants-->
