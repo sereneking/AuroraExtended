@@ -446,7 +446,7 @@
     <element name="Draconic Essence (Defense)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE</requirements>
         <description>
-            <p>Starting at 6th level, your bond with your patron imbues you with a piece of their magical draconic essence. You have resistance to the damage type dealt by your Breath of the Wyrm feature.</P>
+            <p>Starting at 6th level, your bond with your patron imbues you with a piece of their magical draconic essence. You have resistance to the damage type dealt by your Breath of the Wyrm feature.</p>
         </description>
         <sheet>
             <description>You have resistance to {{dragon kind:damage type}}.</description>
