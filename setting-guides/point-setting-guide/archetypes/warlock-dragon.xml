@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.9">
+        <update version="0.0.10">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -47,6 +47,8 @@
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
+            
+            <!--Spellcasting-->
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST" level="1"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE"/>
@@ -58,7 +60,13 @@
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE" level="1" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE"/>
-            <!--<grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH" level="1" />-->
+            
+            <!--Subclass Features-->
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM" level="1"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM" level="1"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE" level="6"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_OFFENSE" level="6"/>
+
             
 
         </rules>
@@ -142,7 +150,7 @@
             <extend>ID_XGTE_SPELL_MAELSTROM</extend>
         </spellcasting>
     </element>
-	<element name="BLUE DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE">
+    <element name="BLUE DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLUE</requirements>
         <description>
             <table>
@@ -167,7 +175,7 @@
             <extend>ID_DJ_PSG_SPELL_FINGERS_OF_LIGHTNING</extend>
         </spellcasting>
     </element>
-	<element name="BRASS DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS">
+    <element name="BRASS DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRASS">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BRASS</requirements>
         <description>
             <table>
@@ -192,7 +200,7 @@
             <extend>ID_XGTE_SPELL_IMMOLATION</extend>
         </spellcasting>
     </element>
-	<element name="BRONZE DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE">
+    <element name="BRONZE DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BRONZE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BRONZE</requirements>
         <description>
             <table>
@@ -217,7 +225,7 @@
             <extend>ID_DJ_PSG_SPELL_FINGERS_OF_LIGHTNING</extend>
         </spellcasting>
     </element>
-	<element name="COPPER DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER">
+    <element name="COPPER DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_COPPER">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_COPPER</requirements>
         <description>
             <table>
@@ -242,7 +250,7 @@
             <extend>ID_DJ_PSG_SPELL_SINKING_MAW</extend>
         </spellcasting>
     </element>
-	<element name="GOLD DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GOLD">
+    <element name="GOLD DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GOLD">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_GOLD</requirements>
         <description>
             <table>
@@ -267,7 +275,7 @@
             <extend>ID_XGTE_SPELL_IMMOLATION</extend>
         </spellcasting>
     </element>
-	<element name="GREEN DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GREEN">
+    <element name="GREEN DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_GREEN">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_GREEN</requirements>
         <description>
             <table>
@@ -292,7 +300,7 @@
             <extend>ID_PHB_SPELL_CLOUDKILL</extend>
         </spellcasting>
     </element>
-	<element name="RED DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED">
+    <element name="RED DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_RED</requirements>
         <description>
             <table>
@@ -317,7 +325,7 @@
             <extend>ID_XGTE_SPELL_IMMOLATION</extend>
         </spellcasting>
     </element>
-	<element name="SILVER DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER">
+    <element name="SILVER DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_SILVER</requirements>
         <description>
             <table>
@@ -342,7 +350,7 @@
             <extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
         </spellcasting>
     </element>
-	<element name="WHITE DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE">
+    <element name="WHITE DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_WHITE</requirements>
         <description>
             <table>
@@ -368,9 +376,90 @@
         </spellcasting>
     </element>
 
+    <element name="Armor of the Wyrm" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_ARMOR_OF_THE_WYRM</requirements>
+        <description>
+            <p>At 1st leveL you gain a gift of draconic scales from your patron. Parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>While you aren’t wearing armor, your AC equals {{ac:armor of wyrm warlock}}.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:armor of wyrm warlock:base" value="13" />
+            <stat name="ac:armor of wyrm warlock:dexterity" value="dexterity:modifier" />
 
-    <!--Feature Replacement Grants-->
-    <!--<element name="Expanded Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ARCHFEY_EXPANDED_SPELL_LIST" />-->
+            <stat name="ac:armor of wyrm warlock" value="ac:armor of wyrm warlock:base" />
+            <stat name="ac:armor of wyrm warlock" value="ac:armor of wyrm warlock:dexterity" />
+
+            <stat name="ac:calculation" value="ac:armor of wyrm warlock" bonus="calculation" equipped="[armor:none]" alt="Armor of the Wyrm (Warlock)" />
+        </rules>
+    </element>
+
+    <element name="Breath of the Wyrm" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_BREATH_OF_THE_WYRM</requirements>
+        <description>
+            <p>Also starting at 1st leveL you can borrow your patron's breath weapon. You have a pool of d6s that you spend to exhale the breath weapon. The number of dice in the pool equals 1 + half your warlock level.</p>
+            <p>As a bonus action, you can exhale this breath weapon in an area, spending dice from the pool to do so. The maximum number of dice you can spend at once equals your proficiency bonus + 1, divided by two. Roll the dice you spend, add them together, and deal that much damage to each creature in the area. The area and the type of damage are determined by your dragon's entry on the Dragon Kind table.</p>
+            <p>Your pool regains all expended dice when you finish a long rest. At 6th leveL the area of cone weapons increases by 5 feet and the length of line weapons increases by 10 feet. They increase again this way at 10th and 14th levels.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Exhale destructive energy. Your breath weapon does {{wyrm-breath-weapon:dice count}}d{{wyrm-breath-weapon:dice size}} {{dragon kind:damage type}} damage with Range {{dragon kind:breath weapon}}.</description>
+        </sheet>
+        <rules>
+            <stat name="wyrm-breath-weapon:dice size" value="6" bonus="dice" />
+            <stat name="wyrm-breath-weapon:dice count" value="2" level="1" />
+            <stat name="wyrm-breath-weapon:dice count" value="3" level="4" />
+            <stat name="wyrm-breath-weapon:dice count" value="4" level="6" />
+            <stat name="wyrm-breath-weapon:dice count" value="5" level="8" />
+            <stat name="wyrm-breath-weapon:dice count" value="6" level="10" />
+            <stat name="wyrm-breath-weapon:dice count" value="7" level="12" />
+            <stat name="wyrm-breath-weapon:dice count" value="8" level="14" />
+            <stat name="wyrm-breath-weapon:dice count" value="9" level="16" />
+            <stat name="wyrm-breath-weapon:dice count" value="10" level="18" />
+            <stat name="wyrm-breath-weapon:dice count" value="11" level="20" />
+        </rules>
+    </element>
+
+    <element name="Draconic Essence (Offense)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_OFFENSE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE</requirements>
+        <description>
+            <p>Starting at 6th level, your bond with your patron imbues you with a piece of their magical draconic essence. When one of your spells or class features deals damage of your dragon type to a creature, you can subject that creature to your patron's terrifying draconic presence. The target must make a Wisdom saving throw against your warlock spell save DC. On a failed saving throw, it becomes frightened for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on a success.</p>
+            <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When one of your spells or class features deals damage of your dragon type to a creature, you can subject that creature to your patron's terrifying draconic presence. The target must make a Wisdom saving throw against your warlock spell save DC {{ spelldc:warlock }}. On a failed saving throw, it becomes frightened for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on a success.</description>
+        </sheet>
+        <rules>
+            <stat name="spelldc:warlock:base" value="8" />
+            <stat name="spelldc:warlock:prof" value="proficiency" />
+            <stat name="spelldc:warlock:charisma" value="charisma:modifier" />
+            
+
+            <stat name="spelldc:warlock" value="spelldc:warlock:base" />
+            <stat name="spelldc:warlock" value="spelldc:warlock:prof" />
+            <stat name="spelldc:warlock" value="spelldc:warlock:charisma" />
+
+            <stat name="spelldc:calculation" value="spelldc:warlock" bonus="calculation" alt="Warlock Spell Save DC" />
+        </rules>
+    </element>
+
+    <element name="Draconic Essence (Defense)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE</requirements>
+        <description>
+            <p>Starting at 6th level, your bond with your patron imbues you with a piece of their magical draconic essence. You have resistance to the damage type dealt by your Breath of the Wyrm feature.</P>
+        </description>
+        <sheet>
+            <description>You have resistance to {{dragon kind:damage type}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK||ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_COPPER" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLUE||ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRONZE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BRASS||ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GOLD||ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_RED" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_GREEN" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER||ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE" />
+        </rules>
+    </element>
+
 
     <element name="Dragon Kind (Black)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK">
         <supports>DJ PSG Dragon Kind</supports>
@@ -504,5 +593,20 @@
     </element>
 
 
-
+    <!--Feature Replacement Grants-->
+    <element name="General Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST" />
+    <element name="Black Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLACK" />
+    <element name="Blue Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLUE" />
+    <element name="Brass Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BRASS" />
+    <element name="Bronze Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BRONZE" />
+    <element name="Copper Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_COPPER" />
+    <element name="Gold Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_GOLD" />
+    <element name="Green Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_GREEN" />
+    <element name="Red Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_RED" />
+    <element name="Silver Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_SILVER" />
+    <element name="White Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_WHITE" />
+    <element name="Armor of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM" />
+    <element name="Breath of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM" />
+    <element name="Draconic Essence (Defense) Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE" />
+    <element name="Draconic Essence (Offense) Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_OFFENSE" />
 </elements>
