@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.12">
+        <update version="0.0.13">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -482,13 +482,13 @@
             <description>
                 <p>You can use an action to manifest spectral dragon wings as a symbol of your patron's raw power and magic. The wings are made of {{dragon kind:damage type}}. When they appear, you can choose to beat the wings in a wing attack, knocking each creature within 10 feet of you prone and dealing each of them 2d6 + {{charisma:modifier}} {{dragon kind:damage type}} damage, and flying up to half your speed to an unoccupied space.</p>
                 <p>Then, whether you performed a wing attack or not, the wings' appearance casts a frightening presence over the battlefield Each creature of your choice within 60 feet of you that is aware of you must make a Wisdom saving throw (DC {{spelldc:warlock}}). On a failed saving throw, a creature becomes frightened for 1 minute. It repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
-                <p>The wings remain for 1 minute, granting you a flying speed {{wingsofterror:speed}}</p>
+                <p>The wings remain for 1 minute, granting you a flying speed {{wingsofterror:speed}}.</p>
                 <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
             </description>
         </sheet>
         <rules>
-            <stat name="wingsofterror:speed" value="speed" />
-            <stat name="wings:calculation" value="wingsofterror:speed:half" alt="Wings of Terror Speed" />
+            <stat name="wingsofterror:speed" value="speed:half" />
+            <stat name="wings:calculation" value="wingsofterror:speed" alt="Wings of Terror Speed" />
         </rules>
     </element>
 
