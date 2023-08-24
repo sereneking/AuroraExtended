@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.14">
+        <update version="0.0.15">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -40,6 +40,14 @@
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_RED"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE"/>
+
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_OFFENSE"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EVERLASTING_SCALES"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_WINGS_OF_TERROR"/>
+
 
         </description>
         <sheet display="false" alt="Dragon Patron">
