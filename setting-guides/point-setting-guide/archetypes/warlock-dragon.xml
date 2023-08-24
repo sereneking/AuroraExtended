@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.13">
+        <update version="0.0.14">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -487,8 +487,9 @@
             </description>
         </sheet>
         <rules>
-            <stat name="wingsofterror:speed" value="speed:half" />
-            <stat name="wings:calculation" value="wingsofterror:speed" alt="Wings of Terror Speed" />
+            <stat name="wingsofterror:speed" value="speed" />
+            <stat name="wingsofterror:flyspeed" value="wingsofterror:speed:half" />
+            <stat name="wings:calculation" value="wingsofterror:flyspeed" alt="Wings of Terror Speed" />
         </rules>
     </element>
 
