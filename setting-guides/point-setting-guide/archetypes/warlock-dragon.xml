@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.15">
+        <update version="0.1.16">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -28,7 +28,8 @@
                 <tr><td>9</td><td>Silver</td><td>Cold</td><td>15ft. Cone</td></tr>
                 <tr><td>10</td><td>White</td><td>Cold</td><td>15ft. Cone</td></tr>
             </table>
-            <!--<div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH"/>-->
+
+            <!--Spellcasting-->
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLACK"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_BLUE"/>
@@ -41,6 +42,7 @@
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_SILVER"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST_WHITE"/>
 
+            <!--Features-->
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE"/>
@@ -48,12 +50,12 @@
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EVERLASTING_SCALES"/>
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_WINGS_OF_TERROR"/>
 
-
         </description>
         <sheet display="false" alt="Dragon Patron">
             <description>Your patron is a mighty ancient dragon, a creature of legend who grants you not only magic, but a taste of what it is to become a dragon.</description>
         </sheet>
         <rules>
+            <!--Decision Feature-->
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND" level="1" />
             
             <!--Spellcasting-->
@@ -76,11 +78,10 @@
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_OFFENSE" level="6"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EVERLASTING_SCALES" level="10"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_WINGS_OF_TERROR" level="14"/>
-
-            
-
         </rules>
     </element>
+
+    <!--Option of Choice-->
     <element name="Dragon Kind" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND">
         <description>
             <p>You choose the scales of your dragon, or determine it randomly, using the Dragon Kind table. Each dragon is associated with a damage type and a breath weapon.</p>
@@ -108,6 +109,8 @@
             <select type="Archetype Feature" name="Dragon Kind" supports="DJ PSG Dragon Kind" />
         </rules>
     </element>
+    
+    <!--Spellcasting-->
     <element name="GENERAL DRAGON EXPANDED SPELLS" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EXPANDED_SPELL_LIST">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST</requirements>
         <description>
@@ -386,6 +389,7 @@
         </spellcasting>
     </element>
 
+    <!--Archetype Features-->
     <element name="Armor of the Wyrm" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_ARMOR_OF_THE_WYRM</requirements>
         <description>
@@ -404,7 +408,6 @@
             <stat name="ac:calculation" value="ac:armor of wyrm warlock" bonus="calculation" equipped="[armor:none]" alt="Armor of the Wyrm (Warlock)" />
         </rules>
     </element>
-
     <element name="Breath of the Wyrm" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_BREATH_OF_THE_WYRM</requirements>
         <description>
@@ -429,7 +432,6 @@
             <stat name="wyrm-breath-weapon:dice count" value="11" level="20" />
         </rules>
     </element>
-
     <element name="Draconic Essence (Offense)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_OFFENSE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE</requirements>
         <description>
@@ -449,7 +451,6 @@
             <stat name="spelldc:calculation" value="spelldc:warlock" bonus="calculation" alt="Warlock Spell Save DC" />
         </rules>
     </element>
-
     <element name="Draconic Essence (Defense)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE</requirements>
         <description>
@@ -466,7 +467,6 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_SILVER||ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_WHITE" />
         </rules>
     </element>
-
     <element name="Everlasting Scales" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EVERLASTING_SCALES">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EVERLASTING_SCALES</requirements>
         <description>
@@ -477,7 +477,6 @@
             <description>Before you take damage, you can use your reaction to harden your scales for a brief moment. Until the end of your next turn, you gain resistance to bludgeoning, piercing, and slashing damage, and immunity to {{dragon kind:damage type}}. Once you use your reaction in this way, you can't do so again until you finish a short or long rest.</description>
         </sheet>
     </element>
-
     <element name="Wings of Terror" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_WINGS_OF_TERROR">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_WINGS_OF_TERROR</requirements>
         <description>
@@ -490,17 +489,13 @@
             <description>
                 <p>You can use an action to manifest spectral dragon wings as a symbol of your patron's raw power and magic. The wings are made of {{dragon kind:damage type}}. When they appear, you can choose to beat the wings in a wing attack, knocking each creature within 10 feet of you prone and dealing each of them 2d6 + {{charisma:modifier}} {{dragon kind:damage type}} damage, and flying up to half your speed to an unoccupied space.</p>
                 <p>Then, whether you performed a wing attack or not, the wings' appearance casts a frightening presence over the battlefield Each creature of your choice within 60 feet of you that is aware of you must make a Wisdom saving throw (DC {{spelldc:warlock}}). On a failed saving throw, a creature becomes frightened for 1 minute. It repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
-                <p>The wings remain for 1 minute, granting you a flying speed {{wingsofterror:speed}}.</p>
+                <p>The wings remain for 1 minute, granting you a flying speed {{speed}}ft.</p>
                 <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
             </description>
         </sheet>
-        <rules>
-            <stat name="wingsofterror:speed" value="speed" />
-            <stat name="wingsofterror:flyspeed" value="wingsofterror:speed:half" />
-            <stat name="wings:calculation" value="wingsofterror:flyspeed" alt="Wings of Terror Speed" />
-        </rules>
     </element>
 
+    <!--Dynamic Variable Elements-->
     <element name="Dragon Kind (Black)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK">
         <supports>DJ PSG Dragon Kind</supports>
         <compendium display="false" />
@@ -632,7 +627,6 @@
         </rules>
     </element>
 
-
     <!--Feature Replacement Grants-->
     <element name="General Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST" />
     <element name="Black Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_BLACK" />
@@ -645,8 +639,8 @@
     <element name="Red Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_RED" />
     <element name="Silver Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_SILVER" />
     <element name="White Dragon Spell List Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EXPANDED_SPELL_LIST_WHITE" />
-    <element name="Armor of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_ARMOR_OF_THE_WYRM" />
-    <element name="Breath of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM" />
+    <element name="Armor of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_ARMOR_OF_THE_WYRM" />
+    <element name="Breath of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_BREATH_OF_THE_WYRM" />
     <element name="Draconic Essence (Defense) Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE" />
     <element name="Draconic Essence (Offense) Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_OFFENSE" />
     <element name="Everlasting Scales Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EVERLASTING_SCALES" />
