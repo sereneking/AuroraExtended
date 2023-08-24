@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Warlock The Dragon Patron from Point Setting Guide</name>
-        <update version="0.0.11">
+        <update version="0.0.12">
             <file name="warlock-dragon.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/warlock-dragon.xml" />
         </update>
     </info>
@@ -66,6 +66,8 @@
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM" level="1"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_DEFENSE" level="6"/>
             <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_DRACONIC_ESSENCE_OFFENSE" level="6"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EVERLASTING_SCALES" level="10"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_WINGS_OF_TERROR" level="14"/>
 
             
 
@@ -427,18 +429,15 @@
             <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
         </description>
         <sheet usage="1/Short Rest">
-            <description>When one of your spells or class features deals damage of your dragon type to a creature, you can subject that creature to your patron's terrifying draconic presence. The target must make a Wisdom saving throw against your warlock spell save DC {{ spelldc:warlock }}. On a failed saving throw, it becomes frightened for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on a success.</description>
+            <description>When one of your spells or class features deals damage of your dragon type to a creature, you can subject that creature to your patron's terrifying draconic presence. The target must make a Wisdom saving throw against your warlock spell save DC {{spelldc:warlock}}. On a failed saving throw, it becomes frightened for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on a success.</description>
         </sheet>
         <rules>
             <stat name="spelldc:warlock:base" value="8" />
             <stat name="spelldc:warlock:prof" value="proficiency" />
             <stat name="spelldc:warlock:charisma" value="charisma:modifier" />
-            
-
             <stat name="spelldc:warlock" value="spelldc:warlock:base" />
             <stat name="spelldc:warlock" value="spelldc:warlock:prof" />
             <stat name="spelldc:warlock" value="spelldc:warlock:charisma" />
-
             <stat name="spelldc:calculation" value="spelldc:warlock" bonus="calculation" alt="Warlock Spell Save DC" />
         </rules>
     </element>
@@ -460,6 +459,38 @@
         </rules>
     </element>
 
+    <element name="Everlasting Scales" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_EVERLASTING_SCALES">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EVERLASTING_SCALES</requirements>
+        <description>
+            <p>At 10th level, your patron grants you the ability to draw on the true might of its scales. Before you take damage, you can use your reaction to harden your scales for a brief moment. Until the end of your next turn, you gain resistance to bludgeoning, piercing, and slashing damage, and immunity to the damage type dealt by your Breath of the Wyrm feature.</p>
+            <p>Once you use your reaction in this way, you can't do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="reaction" usage="1/Short Rest">
+            <description>Before you take damage, you can use your reaction to harden your scales for a brief moment. Until the end of your next turn, you gain resistance to bludgeoning, piercing, and slashing damage, and immunity to {{dragon kind:damage type}}. Once you use your reaction in this way, you can't do so again until you finish a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Wings of Terror" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_WINGS_OF_TERROR">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_WINGS_OF_TERROR</requirements>
+        <description>
+            <p>Starting at 14th level, you can use an action to manifest spectral dragon wings as a symbol of your patron's raw power and magic. The wings are made of your patron's breath weapon energy, such as fire, frost, or lightning. When they appear, you can choose to beat the wings in a wing attack, knocking each creature within 10 feet of you prone and dealing each of them damage of the type dealt by your Breath of the Wyrm feature equal to 2d6 + your Charisma modifier (minimum+ 1), and flying up to half your speed to an unoccupied space.</p>
+            <p>Then, whether you performed a wing attack or not, the wings' appearance casts a frightening presence over the battlefield Each creature of your choice within 60 feet of you that is aware of you must make a Wisdom saving throw against your warlock spell save DC. On a failed saving throw, a creature becomes frightened for 1 minute. It repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p>The wings remain for 1 minute, granting you a flying speed equal to your walking speed</p>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="action" usage="1/Long Rest">
+            <description>
+                <p>You can use an action to manifest spectral dragon wings as a symbol of your patron's raw power and magic. The wings are made of {{dragon kind:damage type}}. When they appear, you can choose to beat the wings in a wing attack, knocking each creature within 10 feet of you prone and dealing each of them 2d6 + {{charisma:modifier}} {{dragon kind:damage type}} damage, and flying up to half your speed to an unoccupied space.</p>
+                <p>Then, whether you performed a wing attack or not, the wings' appearance casts a frightening presence over the battlefield Each creature of your choice within 60 feet of you that is aware of you must make a Wisdom saving throw (DC {{spelldc:warlock}}). On a failed saving throw, a creature becomes frightened for 1 minute. It repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+                <p>The wings remain for 1 minute, granting you a flying speed {{wingsofterror:speed}}</p>
+                <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="wingsofterror:speed" value="speed" />
+            <stat name="wings:calculation" value="wingsofterror:speed:half" alt="Wings of Terror Speed" />
+        </rules>
+    </element>
 
     <element name="Dragon Kind (Black)" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_KIND_BLACK">
         <supports>DJ PSG Dragon Kind</supports>
@@ -609,4 +640,6 @@
     <element name="Breath of the Wyrm Feature Replacement" type="Grants" source="Internal" id="ID_DJ_PSG_ARCHETYPE_FEATURE_DRAGON_BREATH_OF_THE_WYRM" />
     <element name="Draconic Essence (Defense) Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_DEFENSE" />
     <element name="Draconic Essence (Offense) Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_DRACONIC_ESSENCE_OFFENSE" />
+    <element name="Everlasting Scales Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_EVERLASTING_SCALES" />
+    <element name="Wings of Terror Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_DRAGON_WINGS_OF_TERROR" />
 </elements>
