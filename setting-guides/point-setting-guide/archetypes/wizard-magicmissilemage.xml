@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wizard Magic Missile Mage from Point Setting Guide</name>
+        <update version="0.0.1">
+            <file name="wizard-magicmissilemage.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/wizard-magicmissilemage.xml" />
+        </update>
+    </info>
+
+    <element name="Magic Missile Mage" type="Archetype" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_WIZARD_MAGIC_MISSILE_MAGE">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>Magic missile is a staple wizard spell, well-loved for its versatility and unerring accuracy. As a missile magician, however, your fondness for the spell borders on obsession. Your studies focus entirely on this spell, exploring every rune in the spell’s composition and analyzing every aspect of its casting, resulting in new augmentations and greater power than ever before.</p>
+
+            <!--Features-->
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE"/>
+
+
+        </description>
+        <sheet display="false" alt="Magic Missile Mage">
+            <description>Magic missile is a staple wizard spell, well-loved for its versatility and unerring accuracy. As a missile magician, however, your fondness for the spell borders on obsession. Your studies focus entirely on this spell, exploring every rune in the spell’s composition and analyzing every aspect of its casting, resulting in new augmentations and greater power than ever before.</description>
+        </sheet>
+
+        <rules>
+            <!--Subclass Features-->
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE" level="1"/>
+        </rules>
+    </element>
+
+    <!--Spellcasting-->
+    <element name="FORCE MISSILE" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_FORCE_MISSILE</requirements>
+        <description>
+            <p>Beginning when you select this tradition at 2nd level, you learn the spell magic missile, if you do not know it already. Whenever you cast this spell, it is improved in the following ways:</p>
+            <p class="indent"><ul>You fire 1 additional dart whenever you cast this spell. The additional number of missiles increases by 1 at 6th level (2 additional missiles), 10th level (3 additional missiles), and 14th level (4 additional missiles).</ul></p>
+            <p class="indent"><ul>Your missiles bypass any effect, such as the shield spell, that specifically blocks or reflects the magic missile spell.</ul></p>
+            <p class="indent"><ul>You can cast this spell at its lowest level without using a spell slot. You can use this ability a number of times equal to your Intelligence modifier. You regain all expended uses when you finish a long rest. Beginning at 14th level, you can use this ability an unlimited number of times.</ul></p>
+        </description>
+        <sheet usage="*/long rest">
+            <description>
+                <p>Whenever you cast Magic Missle, it is improved in the following ways:</p>
+                <p class="indent"><ul>You fire {{force-missile:count}} additional dart(s) whenever you cast Magic Missile.</ul></p>
+                <p class="indent"><ul>Your missiles bypass any effect, such as the shield spell, that specifically blocks or reflects the magic missile spell.</ul></p>
+                <p class="indent"><ul>You can cast this spell at its lowest level without using a spell slot. You can use this ability a number of times equal to your Intelligence modifier. You regain all expended uses when you finish a long rest. Beginning at 14th level, you can use this ability an unlimited number of times.</ul></p>
+            </description>
+        </sheet>
+        <spellcasting name="Wizard" extend="true">
+            <extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+        </spellcasting>
+        <rules>
+            <stat name="force-missile:count" value="1" level="2" />
+            <stat name="force-missile:count" value="2" level="6" />
+            <stat name="force-missile:count" value="3" level="10" />
+            <stat name="force-missile:count" value="4" level="14" />
+        </rules>
+
+    </element>
+ 
+    <!--Feature Replacement Grants-->
+    <element name="Force Missile Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_FORCE_MISSILE" />
+
+
+</elements>

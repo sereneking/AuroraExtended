@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells</name>
-        <update version="0.0.2">
+        <update version="0.0.4">
             <file name="spells.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/spells/unleashed-spells.xml" />
         </update>
     </info>
@@ -237,41 +237,4 @@
         </setters>
     </element>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Xanathar’s Guide to Everything" id="ID_XGTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
-        <supports>Sorcerer, Wizard, Spell Saving Throw</supports>
-        <description>
-            <p>You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren’t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 12d8 necrotic damage on a failed save, or half as much damage on a successful one.</p>
-            <p class="indent">Nonmagical plants in the area that aren’t creatures, such as trees and shrubs, wither and die instantly.</p>
-        </description>
-        <setters>
-            <set name="keywords">necrotic</set>
-            <set name="level">8</set>
-            <set name="school">Necromancy</set>
-            <set name="time">1 action</set>
-            <set name="duration">Instantaneous</set>
-            <set name="range">150 feet</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">a bit of sponge</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
 </elements>
