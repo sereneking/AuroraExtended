@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Relic Hunter</name>
+        <description>Relic Hunter Background</description>
+        <author url="https://acheronstore.com/">Archeron Games</author>
+        <update version="0.0.1">
+            <file name="background-relichunter.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/backgrounds/background-acolyte.xml" />
+        </update>
+    </info>
+
+    <element name="Relic Hunter" type="Background" source="Point Setting Guide" id="ID_DJ_PSG_BACKGROUND_RELIC_HUNTER">
+        <description>
+            <p>Among those who dedicate themselves to the noble art of exploration and ruins, dungeon and catacomb looting, relic hunters are probably the most recognizable and appreciated community. Some of them are part of the Congregation of Reliquaries. The Creeds hierarchies send them out to find the mortal remains of the saints of the past, their objects, sacred instruments, weapons, and their magical artifacts of divine or angelic nature. Other times, it is a question of common grave robbers and mercenaries who do the same thing and then directly resell their findings to those in charge at the Creed. In any case, relic hunters must have a special license stamped by the Creed itself to dedicate themselves to such research officially. They are also required to provide complex documentation of authenticity and all details of the discovery and specifications of its conservation for each relic recovered in this way. The cult and trade of antiques, both sacred and profane, is in fact so widespread that it leads to an endless number of counterfeits, complete with special laws and sanctions for those who falsify such findings.</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong>Investigation, History</li>
+                <li><strong>Tool Proficiencies:</strong>Thieves tools, Calligrapher's supplies</li>
+                <li><strong>Languages:</strong>One of your choice</li>
+                <li><strong>Equipment:</strong>A parchment case filled with study notes and maps, a crowbar, a set of traveler's clothes, a pouch containing 10gp.</li>
+            </ul>
+            <div element="ID_DJ_PSG_BACKGROUND_FEATURE_RELIC_ACADEMIC" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Relic hunters can be pious believers who carry out this mission as a vocation, or crafty opportunists for whom relics are nothing but a precious object of trade. There is no shortage of middle ground: there are those who are interested in the antiques for the power and the secrets they could give to their owners, the professionals who carry out this work with great seriousness and preparation, and those who have obtained the license and set out to explore ancient tombs to make the find of a lifetime!</p>
+        </description>
+        <setters>
+            <set name="short">Insight, Religion, 2 Languages</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <select type="Language" name="Language (Relic Hunter)" number="1" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_DJ_PSG_BACKGROUND_FEATURE_RELIC_ACADEMIC" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait">
+                <item id="1">I love everything to do with mystery and the unknown.</item>
+                <item id="2">I am fascinated by death and corpses.</item>
+                <item id="3">I look at each relic as the next gold mine.</item>
+                <item id="4">I am a member of the Creed, yes, but I would never, ever deny myself some healthy revelry and a proper fistfight.</item>
+                <item id="5">I know something about failure, but I never let myself be negatively affected by it.</item>
+                <item id="6">I'm not afraid of setting off a trap since I always have the foresight to keep somebody else walking in front of me.</item>
+                <item id="7">1 live my quest as a real vocation.</item>
+                <item id="8">I feel more comfortable in some catacomb or tunnel than in the streets of the most bucolic country in the whole Kingdom.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Research. Recovering a relic and delivering it to the Creed means returning it to the only ones who have the necessary means to understand and respect the Saint's body and spirit. (Good)</item>
+                <item id="2">Conservation. Relics are very precious objects... they belong in a museum! (Lawful)</item>
+                <item id="3">Risk. No quest comes without innumerable dangers, but that's what makes it exciting! (Chaotic)</item>
+                <item id="4">Greed. Promising the same thing to multiple buyers and getting rid of one or more of them after pocketing every single petechin from them all... that's undoubted- ly the quickest way to riches! (Evil)</item>
+                <item id="5">Rest. Death should be followed by stillness, everything that resists death must be found, exorcised, eradicated or placed in safe and competent hands. (Neutral)</item>
+                <item id="6">Mystery. An unknown find, the mystery that hovers in the corridors of a buried mausoleum or in an ancient crypt are what drives a relic hunter to adventuring. (Any)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">Since I was a child, I have heard stories about cursed corpses and backbiters. My research's primary purpose. now, is to find out more about these mystical creatures.</item>
+                <item id="2">I have worked for the Creed for a long time and, al- though I'm now independent, I still have some friends among the priests.</item>
+                <item id="3">I have a deep scar, the cause of which I don't remember, that pulsates whenever a relic is nearby.</item>
+                <item id="4">I am incredibly devoted to the Creed.</item>
+                <item id="5">I believe there was a saint among my ancestors, and want to recover a relic connected to them.</item>
+                <item id="6">I have the diary of a famous Creed antiquarian, full of notes and knowledge. Losing it would be devastating.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I suffer from mild claustrophobia.</item>
+                <item id="2">I can't stand every second spent outdoors.</item>
+                <item id="3">I am paranoid about the constant presence of traps.</item>
+                <item id="4">I hate standing still and loafing around, and I'm annoy ingly hyperactive.</item>
+                <item id="5">I am convinced that every room hides a secret com- partment.</item>
+                <item id="6">I never separate myself from fragments of a gangre nous relic, although it smells terribly.</item>
+            </select>
+        </rules>
+    </element>
+    
+    <element name="Feature: Relic Academic" type="Background Feature" source="Point Setting Guide" id="ID_DJ_PSG_BACKGROUND_FEATURE_RELIC_ACADEMIC">
+        <supports>Background Feature</supports>
+        <description>
+            <p>Thanks to your license, you can access the Creed's archives. studies, and collections of relics, along with the chronicles of known Saints and ancient descriptive tomes on the architecture and the martyrs of the past. This way, you can get information about relics and the locations where they might be found.</p>
+        </description>
+        <sheet alt="Relic Academic" />
+    </element>
+</elements>

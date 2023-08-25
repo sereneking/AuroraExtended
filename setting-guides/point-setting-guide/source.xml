@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<info>
-		<update version="0.1.0">
-			<file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
-		</update>
-	</info>
+    <info>
+        <update version="0.1.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
+        </update>
+    </info>
 
-	<element name="Point Setting Guide" type="Source" source="Core" id="ID_DJ_SOURCE_PSG">
-		<description>
-			<![CDATA[<p>The setting guide for the world of Point.</p>]]>
-		</description>
-		<setters>
-			<set name="abbreviation">PSG</set>
-			<set name="url">https://twitter.com/Drewjones13</set>
-			<set name="image">https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/PGS.png</set>
-			<set name="author" abbreviation="DJ" url="https://twitter.com/Drewjones13">Drew Jones</set>
-			<set name="official">false</set>
-			<set name="supplement">false</set>
-			<set name="league">false</set>
-			<set name="release">20220811</set>
-		</setters>
-	</element>
+    <element name="Point Setting Guide" type="Source" source="Core" id="ID_DJ_SOURCE_PSG">
+        <description>
+            <![CDATA[<p>The setting guide for the world of Point.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">PSG</set>
+            <set name="url">https://twitter.com/Drewjones13</set>
+            <set name="image">https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/PGS.png</set>
+            <set name="author" abbreviation="DJ" url="https://twitter.com/Drewjones13">Drew Jones</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="league">false</set>
+            <set name="release">20220811</set>
+        </setters>
+    </element>
 
 </elements>
