@@ -4,7 +4,7 @@
         <name>Relic Hunter</name>
         <description>Relic Hunter Background</description>
         <author url="https://acheronstore.com/">Archeron Games</author>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <file name="background-relichunter.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/backgrounds/background-relichunter.xml" />
         </update>
     </info>
