@@ -4,7 +4,7 @@
         <name>Relic Hunter</name>
         <description>Relic Hunter Background</description>
         <author url="https://acheronstore.com/">Archeron Games</author>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="background-relichunter.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/backgrounds/background-relichunter.xml" />
         </update>
     </info>
@@ -13,17 +13,17 @@
         <description>
             <p>Among those who dedicate themselves to the noble art of exploration and ruins, dungeon and catacomb looting, relic hunters are probably the most recognizable and appreciated community. Some of them are part of the Congregation of Reliquaries. The Creeds hierarchies send them out to find the mortal remains of the saints of the past, their objects, sacred instruments, weapons, and their magical artifacts of divine or angelic nature. Other times, it is a question of common grave robbers and mercenaries who do the same thing and then directly resell their findings to those in charge at the Creed. In any case, relic hunters must have a special license stamped by the Creed itself to dedicate themselves to such research officially. They are also required to provide complex documentation of authenticity and all details of the discovery and specifications of its conservation for each relic recovered in this way. The cult and trade of antiques, both sacred and profane, is in fact so widespread that it leads to an endless number of counterfeits, complete with special laws and sanctions for those who falsify such findings.</p>
             <ul class="unstyled">
-                <li><strong>Skill Proficiencies:</strong>Investigation, History</li>
-                <li><strong>Tool Proficiencies:</strong>Thieves tools, Calligrapher's supplies</li>
-                <li><strong>Languages:</strong>One of your choice</li>
-                <li><strong>Equipment:</strong>A parchment case filled with study notes and maps, a crowbar, a set of traveler's clothes, a pouch containing 10gp.</li>
+                <li><strong>Skill Proficiencies:</strong> Investigation, History</li>
+                <li><strong>Tool Proficiencies:</strong> Thieves tools, Calligrapher's supplies</li>
+                <li><strong>Languages:</strong> One of your choice</li>
+                <li><strong>Equipment:</strong> A parchment case filled with study notes and maps, a crowbar, a set of traveler's clothes, a pouch containing 10gp.</li>
             </ul>
             <div element="ID_DJ_PSG_BACKGROUND_FEATURE_RELIC_ACADEMIC" />
             <h5>SUGGESTED CHARACTERISTICS</h5>
             <p>Relic hunters can be pious believers who carry out this mission as a vocation, or crafty opportunists for whom relics are nothing but a precious object of trade. There is no shortage of middle ground: there are those who are interested in the antiques for the power and the secrets they could give to their owners, the professionals who carry out this work with great seriousness and preparation, and those who have obtained the license and set out to explore ancient tombs to make the find of a lifetime!</p>
         </description>
         <setters>
-            <set name="short">Insight, Religion, 2 Languages</set>
+            <set name="short">Investigation, History, 1 Language</set>
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
