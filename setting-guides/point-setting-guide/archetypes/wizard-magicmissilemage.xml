@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Wizard Magic Missile Mage from Point Setting Guide</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="wizard-magicmissilemage.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/archetypes/wizard-magicmissilemage.xml" />
         </update>
     </info>
@@ -14,7 +14,9 @@
 
             <!--Features-->
             <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE"/>
-
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_COUNTER_MISSILE"/>
+            <div element="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_INESCAPABLE_MISSILE"/>
 
         </description>
         <sheet display="false" alt="Magic Missile Mage">
@@ -23,11 +25,13 @@
 
         <rules>
             <!--Subclass Features-->
-            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE" level="1"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE" level="2"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES" level="6"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_COUNTER_MISSILE" level="10"/>
+            <grant type="Archetype Feature" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_INESCAPABLE_MISSILE" level="14"/>
         </rules>
     </element>
 
-    <!--Spellcasting-->
     <element name="FORCE MISSILE" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_FORCE_MISSILE">
         <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_FORCE_MISSILE</requirements>
         <description>
@@ -53,11 +57,58 @@
             <stat name="force-missile:count" value="3" level="10" />
             <stat name="force-missile:count" value="4" level="14" />
         </rules>
-
     </element>
  
+    <element name="SHIELD OF MISSILES" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES</requirements>
+        <description>
+            <p>Starting at 6th level, you can cast magic missile in a tight orbit around you, creating a deadly aegis from your foes which lasts for up to 10 minutes. You gain a bonus to your Armor Class equal to the number of missiles orbiting you, which begins as the number of missiles fired, up to a maximum bonus of +6. When a hostile creature ends its turn within 5 feet of you, a single missile strikes it, dealing damage as normal and decreasing the number of missiles orbiting you. Additionally, when you cast magic missile, you can add some or all of the missiles orbiting you to the spell, decreasing the missiles orbiting you by the number used.</p>
+            <p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/short rest">
+            <description>
+                <p>You can cast magic missile in a tight orbit around you, creating a deadly aegis from your foes which lasts for up to 10 minutes. You gain a bonus to your Armor Class equal to the number of missiles orbiting you, which begins as the number of missiles fired, up to a maximum bonus of +6. When a hostile creature ends its turn within 5 feet of you, a single missile strikes it, dealing damage as normal and decreasing the number of missiles orbiting you. Additionally, when you cast magic missile, you can add some or all of the missiles orbiting you to the spell, decreasing the missiles orbiting you by the number used.</p>
+                <p class="indent">Once you use this ability, you can’t use it again until you finish a short or long rest.</p>
+            </description>
+        </sheet>
+    </element>
+
+    <element name="COUNTER-MISSILE" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_COUNTER_MISSILE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_COUNTER_MISSILE</requirements>
+        <description>
+            <p>By 10th level, you’ve learned how to use magic missile to overcome your most powerful fellow wizards. When you see a creature within 60 feet of you casting a spell, you can use your reaction to cast magic missile, with all missiles targeting that creature. The creature must make a single Constitution saving throw as a result of the total damage dealt to maintain concentration while casting the spell, even if the spell wouldn’t normally require concentration. The spell fails and has no effect if the creature loses concentration.</p>
+        </description>
+        <sheet action="reaction">
+            <description>
+                <p>When you see a creature within 60 feet of you casting a spell, you can use your reaction to cast magic missile, with all missiles targeting that creature. The creature must make a single Constitution saving throw as a result of the total damage dealt to maintain concentration while casting the spell, even if the spell wouldn’t normally require concentration. The spell fails and has no effect if the creature loses concentration.</p>
+            </description>
+        </sheet>
+    </element>
+
+    <element name="INESCAPABLE MISSILE" type="Archetype Feature" source="Point Setting Guide" id="ID_DJ_PSG_ARCHETYPE_FEATURE_MAGIC_MISSILE_MAGE_INESCAPABLE_MISSILE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_INESCAPABLE_MISSILE</requirements>
+        <description>
+            <p>Beginning at 14th level, your missiles seek out targets that would otherwise somehow escape them. This grants you the following benefits:</p>
+            <p class="indent"><ul>The range of the spell increases to 500 feet.</ul></p>
+            <p class="indent"><ul>You can target creatures you can’t see within range, as long as you can hear the creatures and there is a path within range from you to the target.</ul></p>
+            <p class="indent"><ul>You can’t be counterspelled when you cast magic missile.</ul></p>
+            <p class="indent"><ul>Your missiles penetrate constructs of magical force, such as those created by the spells wall of force, tiny hut, and resilient sphere.</ul></p>
+        </description>
+        <sheet action="reaction">
+            <description>
+            <p>Your missiles seek out targets that would otherwise somehow escape them. This grants you the following benefits:</p>
+            <p class="indent"><ul>The range of the spell increases to 500 feet.</ul></p>
+            <p class="indent"><ul>You can target creatures you can’t see within range, as long as you can hear the creatures and there is a path within range from you to the target.</ul></p>
+            <p class="indent"><ul>You can’t be counterspelled when you cast magic missile.</ul></p>
+            <p class="indent"><ul>Your missiles penetrate constructs of magical force, such as those created by the spells wall of force, tiny hut, and resilient sphere.</ul></p>
+            </description>
+        </sheet>
+    </element>
+
     <!--Feature Replacement Grants-->
     <element name="Force Missile Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_FORCE_MISSILE" />
-
+    <element name="Shield of Missiles Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_SHIELD_OF_MISSILES" />
+    <element name="Counter-Missile Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_COUNTER_MISSILE" />
+    <element name="Inescapable Missile Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MAGIC_MISSILE_MAGE_INESCAPABLE_MISSILE" />
 
 </elements>
