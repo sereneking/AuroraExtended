@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc Items from Point Setting Guide</name>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -99,10 +99,103 @@
 			<set name="rarity">Rare</set>
 		</setters>
 		<rules>
-            <grant type="Feat Feature" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_WOVEN_IN_FLAME" requirements="!ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_WOVEN_IN_FLAME" />
-            <grant type="Feat Feature" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_FALSE_SHADOW" requirements="!ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_FALSE_SHADOW" />
-            <grant type="Feat Feature" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_MAGICALLY_REINFORCED" requirements="!ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_MAGICALLY_REINFORCED" />
+			<stat name="ac:misc" value="1" />
 		</rules>
+	</element>
+
+    <element name="Greatmind Robes" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_GREATMIND_ROBES">
+		<description>
+			<p>A set of green robes decorated with elaborate stars and enchanted belts.</p>
+            <p class="indent"><strong><em>Magical Archive:</em></strong> You gain advantage with Arcana and Knowledge Checks. </p>
+            <p class="indent"><strong><em>Magically Reinforced:</em></strong> +1 to Armor Class</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+
+    <element name="Gallon-Syringe" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_GALLON_SYRINGE">
+		<description>
+			<p>A brass and copper syringe with multiple chambers to hold liquid. The chambers spin around the center of the syringe.</p>
+            <p class="indent"><strong><em>Vast Storage:</em></strong> This syringe can store up to a total fluid amount of a gallon. This can also hold up to 10 different liquids.</p>
+            <p class="indent"><strong><em>Fast Fluids:</em></strong> As an Action, you can suck up or dispense up to a gallon of fluid from a source. This cannot be used to drain a living creature of fluids from its body.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+    <element name="Hover Tray" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_HOVER_TRAY">
+		<description>
+			<p>Platter-sized tray made of silver with carved feathers across the surface. A very lightweight item for being made out of metal and the size.</p>
+            <p class="indent"><strong><em>Hold Tray:</em></strong> As an Action, whistling a specific tune will cause this item to freeze in space. You can as a Bonus Actions whistle a second tune to release it. It supports up to one person's weight (Up to 250lbs.) and can be forcibly moved with a Strength Save DC 12.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+    <element name="Quiet Bell" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_QUIET_BELL">
+		<description>
+			<p>A beautiful silver bell with ornate decorations. This bell cannot make noise since it is missing the chime in it.</p>
+            <p class="indent"><strong><em>Servant's Silence:</em></strong> When this bell is rung, no noise can be created within a 5 foot space. This only lasts for six seconds. This can only be used four times a day.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+    <element name="Saints Bones" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_SAINTS_BONES">
+		<description>
+			<p>A long lost set of bones from a powerful saint of the past made into an ornate necklace.</p>
+            <p class="indent"><strong><em>Restless Bones:</em></strong> Will rattle ominously when a lie is uttered or undead are nearby.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+    <element name="Tin Buddy" type="Magic Item" source="Point Setting Guide" id="ID_DJ_PSG_MAGIC_ITEM_TIN_BUDDY">
+		<description>
+			<p>A copper and brass metal can about the size of a fist with gears and a valve on the side. </p>
+            <p class="indent"><strong><em>Can Can Man:</em></strong> As an Action, you can turn the value to activate the Tin Buddy. The can then opens and activates the mechanism inside transforming the can into a thin mechanical automaton. This automaton has the stat block: HP 2, AC 10, STR 3 (-4), DEX 10 (+0), CON 10 (+0), INT 3 (-4), WIS 10 (+0), CHA 7 (-2). It is loud (Disadvantage on Stealth), annoying (Disadvantage on Charisma checks), and is not very skilled (No Skill bonuses). It also has no real means of fighting by default. It stays activated for 10 hours or until dispelled.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
 	</element>
 
 </elements>
