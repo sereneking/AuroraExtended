@@ -4,7 +4,7 @@
 		<name>Feats</name>
         <description>Feats from the Setting Guide for the world of Point.</description>
         <author url="https://twitter.com/Drewjones13">Drew Jones</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/feats.xml" />
 		</update>
 	</info>
@@ -35,7 +35,7 @@
 			<description>+1 to Armor Class</description>
 		</sheet>
         <rules>
-			<stat name="ac" value="1" alt="Armor Score Increase" />
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
 		</rules>
 	</element>
 

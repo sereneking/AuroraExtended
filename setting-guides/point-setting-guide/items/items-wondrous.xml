@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc Items from Point Setting Guide</name>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -98,7 +98,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 		<rules>
-			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+			<stat name="ac:misc" value="1" />
             <grant type="Feat Feature" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_WOVEN_IN_FLAME" requirements="!ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_WOVEN_IN_FLAME" />
             <grant type="Feat Feature" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_FALSE_SHADOW" requirements="!ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_FALSE_SHADOW" />
             <grant type="Feat Feature" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_MAGICALLY_REINFORCED" requirements="!ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_MAGICALLY_REINFORCED" />
