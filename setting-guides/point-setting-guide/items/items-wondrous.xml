@@ -94,6 +94,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
+            <set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
 		</setters>
