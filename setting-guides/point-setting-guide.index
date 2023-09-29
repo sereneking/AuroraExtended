@@ -4,7 +4,7 @@
         <name>Point Setting Guide</name>
         <description>The official setting guide for the world of Point.</description>
         <author url="https://twitter.com/Drewjones13">Drew Jones</author>
-        <update version="0.0.8">
+        <update version="0.0.9">
             <file name="point-setting-guide.index" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide.index" />
         </update>
     </info>
@@ -12,6 +12,9 @@
         <file name="source.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/source.xml" />
 
         <!-- races -->
+
+        <!-- feats -->
+        <file name="feats.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/feats.xml" />
 
         <!-- classes -->
 

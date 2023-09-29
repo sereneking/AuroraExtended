@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+        <description>Feats from the Setting Guide for the world of Point.</description>
+        <author url="https://twitter.com/Drewjones13">Drew Jones</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Cloak of the False Dragon: Woven in Flame" type="Feat" source="Point Setting Guide" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_WOVEN_IN_FLAME">
+		<description>
+			<p>Whenever you would take fire damage, you take 1d4 less damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you would take fire damage, you take 1d4 less damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Cloak of the False Dragon: False Shadow" type="Feat" source="Point Setting Guide" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_FALSE_SHADOW">
+		<description>
+			<p>Once per day, you can make your shadow appear as if it was cast from a creature that could be mistaken as a dragon.</p>
+		</description>
+        <sheet>
+			<description>Once per day, you can make your shadow appear as if it was cast from a creature that could be mistaken as a dragon.</description>
+		</sheet>
+	</element>
+
+	<element name="Cloak of the False Dragon: Magically Reinforced" type="Feat" source="Point Setting Guide" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_MAGICALLY_REINFORCED">
+		<description>
+			<p>+1 to Armor Class</p>
+		</description>
+        <sheet>
+			<description>+1 to Armor Class</description>
+		</sheet>
+        <rules>
+			<stat name="ac" value="1" alt="Armor Score Increase" />
+		</rules>
+	</element>
+
+</elements>

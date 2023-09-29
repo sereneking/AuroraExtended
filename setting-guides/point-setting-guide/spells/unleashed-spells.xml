@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Spells</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="spells.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/spells/unleashed-spells.xml" />
         </update>
     </info>
@@ -232,6 +232,48 @@
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">(a lead ring or green dragon's scale)</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Hypnic Jerk" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_HYPNIC_JERK">
+        <supports>Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>Strange things happen in the mind and body in that moment between waking and sleeping. One of the most common is being startled awake by a sudden feeling of falling. With a snap of your fingers, you trigger that sensation in a creature you can see within range. The target must succeed on a Wisdom saving throw or take 1d6 force damage. If the target fails the saving throw by 5 or more, it drops one object it is holding. A dropped object lands in the creature's space.</p>
+            <p class="indent">The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+        </description>
+        <setters>
+            <set name="keywords">illusion</set>
+            <set name="level">0</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">60ft.</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Power Word Rend" type="Spell" source="Point Setting Guide" id="ID_DJ_PSG_SPELL_POWER_WORD_REND">
+        <supports>Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You speak a word of power that causes the internal organs of a creature you can see within range to rupture. The target must make a Constitution saving throw. It takes 4d6+20 force damage on a failed save, or half as much damage on a successful one. If the target is below half its hit point maximum, it has disadvantage on this saving throw. This spell has no effect on creatures without vital internal organs, such as constructs, oozes, and undead.</p>
+            <p class="indent"><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.</p>
+        </description>
+        <setters>
+            <set name="keywords">evocation</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">90ft.</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
