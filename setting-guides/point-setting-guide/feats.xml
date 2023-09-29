@@ -4,7 +4,7 @@
 		<name>Feats</name>
         <description>Feats from the Setting Guide for the world of Point.</description>
         <author url="https://twitter.com/Drewjones13">Drew Jones</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/sereneking/auroraextended/master/setting-guides/point-setting-guide/feats.xml" />
 		</update>
 	</info>
@@ -27,16 +27,13 @@
 		</sheet>
 	</element>
 
-	<element name="Cloak of the False Dragon: Magically Reinforced" type="Feat" source="Point Setting Guide" id="ID_DJ_PSG_FEAT_CLOAK_OF_THE_FALSE_DRAGON_MAGICALLY_REINFORCED">
+	<element name="Greatmind Robes: Magical Archive" type="Feat" source="Point Setting Guide" id="ID_DJ_PSG_FEAT_GREATMIND_ROBES_MAGICAL_ARCHIVE">
 		<description>
-			<p>+1 to Armor Class</p>
+			<p>You gain advantage with Arcana and Knowledge Checks. </p>
 		</description>
         <sheet>
-			<description>+1 to Armor Class</description>
+			<description>You gain advantage with Arcana and Knowledge Checks. </description>
 		</sheet>
-        <rules>
-			<stat name="ac:misc" value="1" />
-		</rules>
 	</element>
 
 </elements>
